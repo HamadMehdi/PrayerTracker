@@ -1,0 +1,29 @@
+/* Define Amiri Font */
+@font-face {
+    font-family: 'Amiri';
+    src: url('/Content/Fonts/Amiri-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Amiri';
+    src: url('/Content/Fonts/Amiri-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Define Tajawal Font */
+@font-face {
+    font-family: 'Tajawal';
+    src: url('/Content/Fonts/Tajawal-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    src: url('/Content/Fonts/Tajawal-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}

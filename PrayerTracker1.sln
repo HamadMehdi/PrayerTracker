@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.35706.149
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrayerTracker1", "PrayerTracker1.csproj", "{DB697DEE-1C90-4DC2-872D-91B034BB5F2C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB697DEE-1C90-4DC2-872D-91B034BB5F2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB697DEE-1C90-4DC2-872D-91B034BB5F2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB697DEE-1C90-4DC2-872D-91B034BB5F2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB697DEE-1C90-4DC2-872D-91B034BB5F2C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63EF6957-55D1-4909-B13F-3DEF14CDD910}
+	EndGlobalSection
+EndGlobal

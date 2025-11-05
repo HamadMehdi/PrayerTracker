@@ -1,0 +1,229 @@
+﻿@model PrayerTracker1.Models.ReportsVM.ReportsVM
+
+<div class="container-fluid py-3" style="background-color: #f8f9fa;">
+    <div class="card shadow rounded-lg border-0" style="margin: 0 auto; background-color: #fff;">
+        <div class="card-header border-0 py-3" style="background: linear-gradient(135deg, #1a237e, #3949ab);">
+            <div class="d-flex align-items-center">
+                <div class="me-3 rounded-circle bg-white p-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                    <i class="fa fa-print text-primary"></i>
+                </div>
+                <h4 class="mb-0 text-white fw-light">Prayer <span class="fw-bold">Reports Generator</span></h4>
+            </div>
+        </div>
+
+        <div class="card-body p-4">
+            @using (Html.BeginForm("PrayerReport", "Reports", FormMethod.Post, new { enctype = "multipart/form-data", id = "prayerReportForm" }))
+            {
+                <div class="row g-4 mb-4">
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 border-0 shadow-sm hover-shadow transition">
+                            <div class="card-body">
+                                <div class="mb-2 text-primary">
+                                    <i class="fa fa-calendar-alt fa-fw"></i>
+                                    <span class="ms-2 fw-bold">Select Date</span>
+                                </div>
+                                @Html.TextBox("Date",
+                                    (Model != null && Model.Date != DateTime.MinValue
+                                        ? Model.Date.ToString("yyyy-MM-dd")
+                                        : DateTime.Now.ToString("yyyy-MM-dd")
+                                    ),
+                                    new { @class = "form-control form-control-lg border-0 bg-light", type = "date" }
+                                )
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 border-0 shadow-sm hover-shadow transition">
+                            <div class="card-body">
+                                <div class="mb-2 text-success">
+                                    <i class="fa fa-calendar-week fa-fw"></i>
+                                    <span class="ms-2 fw-bold">Date Range</span>
+                                </div>
+                                <select class="form-select form-select-lg border-0 bg-light disabled-control" id="DateRange" name="DateRange" disabled>
+                                    <option selected>Select Date Range</option>
+                                    <option value="today">Today</option>
+                                    <option value="yesterday">Yesterday</option>
+                                    <option value="thisweek">This Week</option>
+                                    <option value="lastweek">Last Week</option>
+                                    <option value="thismonth">This Month</option>
+                                    <option value="lastmonth">Last Month</option>
+                                    <option value="custom">Custom Range</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 border-0 shadow-sm hover-shadow transition">
+                            <div class="card-body">
+                                <div class="mb-2 text-info">
+                                    <i class="fa fa-pray fa-fw"></i>
+                                    <span class="ms-2 fw-bold">Prayer Type</span>
+                                </div>
+                                <select class="form-select form-select-lg border-0 bg-light disabled-control" id="SelectedPrayer" name="SelectedPrayer" disabled>
+                                    <option selected>Select Prayer</option>
+                                    <option value="all">All Prayers</option>
+                                    <option value="fajr">Fajr</option>
+                                    <option value="dhuhr">Dhuhr</option>
+                                    <option value="asr">Asr</option>
+                                    <option value="maghrib">Maghrib</option>
+                                    <option value="isha">Isha</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="customDateRange" class="row g-4 mb-4" style="display: none;">
+                    <div class="col-12 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm hover-shadow transition">
+                            <div class="card-body">
+                                <div class="mb-2 text-warning">
+                                    <i class="fa fa-calendar-minus fa-fw"></i>
+                                    <span class="ms-2 fw-bold">Start Date</span>
+                                </div>
+                                @Html.TextBox("StartDate",
+                                    (Model != null && Model.StartDate != DateTime.MinValue
+                                        ? Model.StartDate.ToString("yyyy-MM-dd")
+                                        : DateTime.Now.ToString("yyyy-MM-dd")
+                                    ),
+                                    new { @class = "form-control form-control-lg border-0 bg-light disabled-control", type = "date", disabled = "disabled" }
+                                )
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm hover-shadow transition">
+                            <div class="card-body">
+                                <div class="mb-2 text-danger">
+                                    <i class="fa fa-calendar-plus fa-fw"></i>
+                                    <span class="ms-2 fw-bold">End Date</span>
+                                </div>
+                                @Html.TextBox("EndDate",
+                                    (Model != null && Model.EndDate != DateTime.MinValue
+                                        ? Model.EndDate.ToString("yyyy-MM-dd")
+                                        : DateTime.Now.ToString("yyyy-MM-dd")
+                                    ),
+                                    new { @class = "form-control form-control-lg border-0 bg-light disabled-control", type = "date", disabled = "disabled" }
+                                )
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="fw-bold mb-3 text-center">Select Report Format</h5>
+                        <div class="d-flex flex-wrap justify-content-center gap-3">
+                            <div class="report-type-option">
+                                <input type="radio" name="ReportType" id="dailyReport" value="daily" class="report-type-input" checked />
+                                <label for="dailyReport" class="report-type-label">
+                                    <div class="icon-container bg-primary text-white badge">
+                                        <i class="fa fa-calendar-day"></i>
+                                    </div>
+                                    <span>Daily</span>
+                                </label>
+                            </div>
+
+                            <div class="report-type-option">
+                                <input type="radio" name="ReportType" id="weeklyReport" value="weekly" class="report-type-input" />
+                                <label for="weeklyReport" class="report-type-label">
+                                    <div class="icon-container bg-success text-white badge">
+                                        <i class="fa fa-calendar-week"></i>
+                                    </div>
+                                    <span>Weekly</span>
+                                </label>
+                            </div>
+
+                            <div class="report-type-option">
+                                <input type="radio" name="ReportType" id="monthlyReport" value="monthly" class="report-type-input" />
+                                <label for="monthlyReport" class="report-type-label">
+                                    <div class="icon-container bg-info text-white badge">
+                                        <i class="fa fa-calendar-alt"></i>
+                                    </div>
+                                    <span>Monthly</span>
+                                </label>
+                            </div>
+
+                            <div class="report-type-option">
+                                <input type="radio" name="ReportType" id="categoryReport" value="category" class="report-type-input" />
+                                <label for="categoryReport" class="report-type-label">
+                                    <div class="icon-container bg-warning text-white badge">
+                                        <i class="fa fa-tags"></i>
+                                    </div>
+                                    <span>By Category</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center gap-3">
+                    <button type="submit" class="btn btn-lg px-4 py-3" style="background: linear-gradient(135deg, #2e7d32, #4caf50); color: white; border: none; border-radius: 12px;">
+                        <i class="fa fa-print me-2"></i> Generate Report
+                    </button>
+                    <button type="reset" class="btn btn-lg px-4 py-3" style="background-color: #f5f5f5; color: #757575; border: none; border-radius: 12px;">
+                        <i class="fa fa-undo me-2"></i> Reset
+                    </button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<script src="~/Content/js/jquery-3.6.0.min.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+      
+        const setElementState = (selector, enabled) => {
+            $(selector).prop('disabled', !enabled).toggleClass('disabled-control', !enabled);
+        };
+
+        setElementState('#DateRange, #SelectedPrayer, #StartDate, #EndDate', false);
+        $('#customDateRange').hide();
+        $('#dailyReport').prop('checked', true);
+
+        $('button[type="reset"]').click(function (e) {
+            e.preventDefault();
+            $(this).closest('form').trigger('reset');
+            setElementState('input[name="ReportType"]', true);
+            setElementState('#Date', true);
+            setElementState('#DateRange, #SelectedPrayer', false);
+            $('#dailyReport').prop('checked', true).trigger('change');
+            $('.badge').css('opacity', 1);
+            $('#customDateRange').hide();
+        });
+
+        $('input[name="ReportType"]').change(function () {
+            const isCategoryMode = $(this).val() === 'category';
+
+            setElementState('#Date, #DateRange, #SelectedPrayer, input[name="ReportType"]', true);
+            $('.badge').css('opacity', 1);
+
+            if (isCategoryMode) {
+                setElementState('#Date, input[name="ReportType"]:not(#categoryReport)', false);
+                $('.report-type-label:not([for="categoryReport"]) .badge').css('opacity', 0.5);
+            } else {
+                setElementState('#DateRange, #SelectedPrayer', false);
+            }
+
+            $('#DateRange').trigger('change');
+        });
+
+        $('#DateRange').change(function () {
+            const isCustomRange = $(this).val() === 'custom';
+            $('#customDateRange').toggle(isCustomRange);
+            setElementState('#StartDate, #EndDate', isCustomRange);
+        });
+
+        $('#dailyReport').trigger('change');
+    });
+</script>

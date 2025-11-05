@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title srt>Prayer Tracker</title>
+    <link href="~/Content/Fonts/css/all.min.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="~/Content/sweetalert2/sweetalert2.min.css" rel="stylesheet" />
+    <link href="~/Content/Fonts/font.css" rel="stylesheet" />
+    <link href="~/Content/css/Layout.css" rel="stylesheet" />
+   
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
+        <div class="container-fluid">
+            <button class="btn btn-sm btn-icon-only text-dark me-2 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle sidebar">
+                <i class="fas fa-bars"></i>
+            </button>
+            @if (Session["UserID"] != null && Session["Role"]?.ToString() == "User")
+            {
+                <a class="navbar-brand d-flex align-items-center gap-2" href="@Url.Action("UserDashboard", "User")">
+                    <img src="~/Content/Image/Videos/LOGO.jpg" alt="Logo" class="img-fluid" style="max-height: 40px; width: auto;" />
+                    <span class="fw-bold text-primary-emphasis">Prayer Tracker</span>
+                </a>
+            }
+            @if (Session["UserID"] != null && Session["Role"]?.ToString() == "Admin")
+            {
+                <a class="navbar-brand d-flex align-items-center gap-2" href="@Url.Action("Dashboard", "Admin")">
+                    <img src="~/Content/Image/Videos/LOGO.jpg" alt="Logo" class="img-fluid" style="max-height: 40px; width: auto;" />
+                    <span class="fw-bold text-primary-emphasis">Prayer Tracker</span>
+                </a>
+            }
+
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item me-3">
+                        <a class="nav-link position-relative" href="#">
+                            <i class="fas fa-bell"></i>
+                            <span class="badge-dot"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="~/Content/Image/WhatsApp Image 2025-03-11 at 21.59.32_90d086b6.jpg" alt="Profile" class="user-avatar me-2">
+                            <span class="d-none d-md-block">@User.Identity.Name</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="@Url.Action("UpdateProfile", "Admin", new { id = Session["UserID"] })">
+                                    <i class="fas fa-user me-2 text-primary"></i> Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="@Url.Action("Settings", "User")">
+                                    <i class="fas fa-cog me-2 text-primary"></i> Settings
+                                </a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item" href="@Url.Action("Logout", "Account")">
+                                    <i class="fas fa-sign-out-alt me-2 text-danger"></i> Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+                <div class="pt-4 pb-3">
+                    <ul class="nav flex-column">
+                        @if (Session["UserID"] != null && Session["Role"]?.ToString() == "Admin")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Action("Dashboard", "Admin")">
+                                    <i class="fas fa-home"></i> Dashboard
+                                </a>
+                            </li>
+                        }@if (Session["UserID"] != null && Session["Role"]?.ToString() == "Admin")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Action("Users", "Admin")">
+                                    <i class="fas fa-user-alt"></i> Users List
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Action("List", "Admin")">
+                                    <i class="fas fa-tools"></i> Content Managment
+                                </a>
+                            </li>
+                        }
+                        @if (Session["UserID"] != null && Session["Role"]?.ToString() == "User")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Action("UserDashboard", "User")">
+                                    <i class="fas fa-home"></i> Dashboard
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Action("New", "Prayer")">
+                                    <i class="fas fa-calendar-alt"></i> Prayer Log
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Action("New", "Reports")">
+                                    <i class="fas fa-chart-bar"></i> Reports
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Action("List", "Admin")">
+                                    <i class="fas fa-user"></i>Prayer Guidance
+                                </a>
+                            </li>
+                        }
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Logout", "Home")">
+                                <i class="fas fa-sign-out-alt"></i> Log Out
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </nav>
+
+
+            <main class="col-md-9 col-lg-10 main-content">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        @RenderBody()
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+    <footer class="text-center py-3 fixed-bottom">
+        <div class="container">
+            <span>&copy; 2025 - Prayer Tracker </span>
+        </div>
+    </footer>
+
+    <script src="~/Content/js/jquery-3.6.0.min.js"></script>
+    <script src="~/Content/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Content/dist/js/select2.full.min.js"></script>
+    <script src="~/Content/sweetalert2/sweetalert2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Fade in elements on scroll
+  const fadeElements = document.querySelectorAll('.fade-in');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  fadeElements.forEach(element => {
+    observer.observe(element);
+  });
+});</script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,638 @@
+﻿@model PrayerTracker1.Models.UserVM.UserDashboardVM
+
+<head>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .card {
+            transition: transform 0.2s ease-in-out;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+            .card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            }
+
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 24px;
+        }
+
+            .toggle-switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+        .toggle-slider {
+            position: absolute;
+            cursor: pointer;
+            inset: 0;
+            background-color: #ccc;
+            transition: .3s;
+            border-radius: 34px;
+        }
+
+            .toggle-slider:before {
+                position: absolute;
+                content: "";
+                height: 18px;
+                width: 18px;
+                left: 3px;
+                bottom: 3px;
+                background-color: white;
+                transition: .3s;
+                border-radius: 50%;
+            }
+
+        input:checked + .toggle-slider {
+            background-color: #4e73df;
+        }
+
+            input:checked + .toggle-slider:before {
+                transform: translateX(26px);
+            }
+
+        .bg-gradient-primary {
+            background: linear-gradient(90deg, #4e73df 0%, #224abe 100%);
+        }
+
+        .bg-gradient-warning {
+            background: linear-gradient(90deg, #f6c23e 0%, #f4b619 100%);
+        }
+
+        .icon-circle {
+            height: 2.5rem;
+            width: 2.5rem;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .text-indigo {
+            color: #6610f2 !important;
+        }
+
+        .badge.fs-8 {
+            font-size: 0.8rem;
+        }
+
+        .btn {
+            transition: all 0.2s ease;
+        }
+
+            .btn:hover {
+                transform: translateY(-1px);
+            }
+
+        .btn-success {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+
+            .btn-success:hover {
+                background-color: #218838;
+                border-color: #1e7e34;
+            }
+
+        .btn-outline-secondary:hover {
+            background-color: #f8f9fa;
+        }
+
+        .quick-actions .btn {
+            width: 100%;
+            text-align: left;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border: 1px solid #e9ecef;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid px-4 py-4">
+
+        <div class="row mb-4 align-items-center">
+            <div class="col">
+                <h4 class="mb-0">Dashboard</h4>
+                <p class="text-muted">Welcome back, @Model.UserName</p>
+            </div>
+
+        </div>
+
+        <div class="row mb-4">
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-muted text-uppercase mb-1">Today's Prayers</div>
+                                <div class="h5 mb-0 font-weight-bold">@Model.TotalPrayer</div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="icon-circle bg-primary">
+                                    <i class="fas fa-pray text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-muted text-uppercase mb-1">Weekly Consistency</div>
+                                <div class="h5 mb-0 font-weight-bold">89%</div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="icon-circle bg-success">
+                                    <i class="fas fa-calendar-check text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-muted text-uppercase mb-1">Monthly Streak</div>
+                                <div class="h5 mb-0 font-weight-bold">21 days</div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="icon-circle bg-warning">
+                                    <i class="fas fa-fire-alt text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-muted text-uppercase mb-1">Community Rank</div>
+                                <div class="h5 mb-0 font-weight-bold">Silver Tier</div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="icon-circle bg-info">
+                                    <i class="fas fa-users text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-8 mb-4">
+                <div class="card shadow-sm border-0">
+                    <div class="card-header d-flex justify-content-between align-items-center bg-gradient-primary text-white">
+                        <h6 class="m-0 font-weight-bold">
+                            <i class="fas fa-prayer-beads me-2"></i>Today's Prayers
+                        </h6>
+                        <span class="text-white-50">
+                            <i class="far fa-clock me-1"></i>Last updated today at @DateTime.Now.ToString("h:mm tt")
+                        </span>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="list-group list-group-flush">
+                            @{
+                                var fajrPrayer = Model.Prayers.FirstOrDefault(p => p.PrayerName.Equals("Fajr", StringComparison.OrdinalIgnoreCase));
+                                var isFajrCompleted = fajrPrayer != null && fajrPrayer.IsOffered;
+                                var isFajrQaza = fajrPrayer != null && fajrPrayer.IsQaza;
+                                var fajrprayerId = fajrPrayer?.ID ?? 0;
+                            }
+                            <div class="list-group-item d-flex justify-content-between align-items-center py-3 border-start-0 border-end-0">
+                                <div>
+                                    <h6 class="my-0 fw-bold">
+                                        <i class="fas fa-sun text-warning me-2"></i>Fajr
+                                    </h6>
+                                    <small class="text-muted">
+                                        @if (isFajrCompleted)
+                                        {
+                                            <i class="fas fa-check-circle text-success me-1"></i>
+                                            @:Completed at @fajrPrayer.PrayerDate.Value.ToString("h:mm tt")
+                                        }
+                                        else if (isFajrQaza)
+                                        {
+                                            <i class="fas fa-history text-warning me-1"></i>
+                                            @:Qaza at @fajrPrayer.PrayerDate.Value.ToString("h:mm tt")
+                                        }
+
+                                        else
+                                        {
+                                            <i class="far fa-clock me-1"></i>
+                                            @:Scheduled at 5:30 AM
+                                        }
+                                    </small>
+                                </div>
+                                @if (isFajrCompleted)
+                                {
+                                    <span class="badge bg-success fs-8 px-3 py-2" style="min-width: 80px;">
+                                        <i class="fas fa-check me-1"></i>Completed
+                                    </span>
+                                }
+                                else if (isFajrQaza)
+                                {
+                                    <span class="badge bg-warning fs-8 px-3 py-2 text-dark" style="min-width: 89px;">
+                                        <i class="fas fa-history me-1"></i>Qaza
+                                    </span>
+                                }
+                                else
+                                {
+                                    <div class="btn-group">
+                                        <a href="@Url.Action("TogglePrayerStatus", "User", new { prayerId = fajrprayerId, prayerName = "Fajr", PrayerType = "Completed" })"
+                                           class="btn btn-primary btn-sm">
+                                            <i class="fas fa-check me-1"></i>Complete
+                                        </a>
+                                        <a href="@Url.Action("TogglePrayerStatus", "User", new { prayerId = fajrprayerId, prayerName = "Fajr", PrayerType = "Missed" })"
+                                           class="btn btn-danger btn-sm">
+                                            <i class="fas fa-times me-1"></i>Missed
+                                        </a>
+                                    </div>
+                                }
+                            </div>
+
+                            @{
+                                var dhuhrPrayer = Model.Prayers.FirstOrDefault(p => p.PrayerName.Equals("Dhuhr", StringComparison.OrdinalIgnoreCase));
+                                var isDhuhrCompleted = dhuhrPrayer != null && dhuhrPrayer.IsOffered;
+                                var isDhuhrQaza = dhuhrPrayer != null && dhuhrPrayer.IsQaza;
+                                var dhuhrPrayerId = dhuhrPrayer?.ID ?? 0;
+                            }
+                            <div class="list-group-item d-flex justify-content-between align-items-center py-3 border-start-0 border-end-0 bg-light">
+                                <div>
+                                    <h6 class="my-0 fw-bold">
+                                        <i class="fas fa-sun text-warning me-2"></i>Dhuhr
+                                    </h6>
+                                    <small class="text-muted">
+                                        @if (isDhuhrCompleted)
+                                        {
+                                            <i class="fas fa-check-circle text-success me-1"></i>
+                                            @:Completed at @dhuhrPrayer.PrayerDate.Value.ToString("h:mm tt")
+                                        }
+                                        else if (isDhuhrQaza)
+                                        {
+                                            <i class="fas fa-history text-warning me-1"></i>
+                                            @:Qaza at @dhuhrPrayer.PrayerDate.Value.ToString("h:mm tt")
+                                        }
+                                        else
+                                        {
+                                            <i class="far fa-clock me-1"></i>
+                                            @:Scheduled at 1:30 PM
+                                        }
+                                    </small>
+                                </div>
+                                @if (isDhuhrCompleted)
+                                {
+                                    <span class="badge bg-success fs-8 px-3 py-2" style="min-width: 80px; text-align: center">
+                                        <i class="fas fa-check me-1"></i>Completed
+                                    </span>
+                                }
+                                else if (isDhuhrQaza)
+                                {
+                                    <span class="badge bg-warning fs-8 px-3 py-2 text-dark" style="min-width: 89px; text-align: center">
+                                        <i class="fas fa-history me-1"></i>Qaza
+                                    </span>
+                                }
+
+                                else
+                                {
+                                    <div class="btn-group">
+                                        <a href="@Url.Action("TogglePrayerStatus", "User", new { prayerId = dhuhrPrayerId, prayerName = "Dhuhr", PrayerType = "Completed" })"
+                                           class="btn btn-primary btn-sm">
+                                            <i class="fas fa-check me-1"></i>Complete
+                                        </a>
+                                        <a href="@Url.Action("TogglePrayerStatus", "User", new { prayerId = dhuhrPrayerId, prayerName = "Dhuhr", PrayerType = "Missed" })"
+                                           class="btn btn-danger btn-sm">
+                                            <i class="fas fa-times me-1"></i>Missed
+                                        </a>
+                                    </div>
+                                }
+                            </div>
+
+                            @{
+                                var asrPrayer = Model.Prayers.FirstOrDefault(p => p.PrayerName.Equals("Asr", StringComparison.OrdinalIgnoreCase));
+                                var isAsrCompleted = asrPrayer != null && asrPrayer.IsOffered;
+                                var isAsrQaza = asrPrayer != null && asrPrayer.IsQaza;
+                                var asrPrayerId = asrPrayer?.ID ?? 0;
+                            }
+                            <div class="list-group-item d-flex justify-content-between align-items-center py-3 border-start-0 border-end-0">
+                                <div>
+                                    <h6 class="my-0 fw-bold">
+                                        <i class="fas fa-sun text-warning me-2"></i>Asr
+                                    </h6>
+                                    <small class="text-muted">
+                                        @if (isAsrCompleted)
+                                        {
+                                            <i class="fas fa-check-circle text-success me-1"></i>
+                                            @:Completed at @asrPrayer.PrayerDate.Value.ToString("h:mm tt")
+                                        }
+                                        else if (isAsrQaza)
+                                        {
+                                            <i class="fas fa-history text-warning me-1"></i>
+                                            @:Qaza at @asrPrayer.PrayerDate.Value.ToString("h:mm tt")
+                                        }
+                                        else
+                                        {
+                                            <i class="far fa-clock me-1"></i>
+                                            @:Scheduled at 4:30 PM
+                                        }
+                                    </small>
+                                </div>
+                                @if (isAsrCompleted)
+                                {
+                                    <span class="badge bg-success fs-8 px-3 py-2" style="min-width: 80px; text-align: center">
+                                        <i class="fas fa-check me-1"></i>Completed
+                                    </span>
+                                }
+                                else if (isAsrQaza)
+                                {
+                                    <span class="badge bg-warning fs-8 px-3 py-2 text-dark" style="min-width: 89px; text-align: center">
+                                        <i class="fas fa-history me-1"></i>Qaza
+                                    </span>
+                                }
+                                else
+                                {
+                                    <div class="btn-group">
+                                        <a href="@Url.Action("TogglePrayerStatus", "User", new { prayerId = asrPrayerId, prayerName = "Asr", PrayerType = "Completed" })"
+                                           class="btn btn-primary btn-sm">
+                                            <i class="fas fa-check me-1"></i>Complete
+                                        </a>
+                                        <a href="@Url.Action("TogglePrayerStatus", "User", new { prayerId = asrPrayerId, prayerName = "Asr", PrayerType = "Missed" })"
+                                           class="btn btn-danger btn-sm">
+                                            <i class="fas fa-times me-1"></i>Missed
+                                        </a>
+                                    </div>
+                                }
+                            </div>
+
+                            @{
+                                var maghribPrayer = Model.Prayers.FirstOrDefault(p => p.PrayerName.Equals("Maghrib", StringComparison.OrdinalIgnoreCase));
+                                var isMaghribCompleted = maghribPrayer != null && maghribPrayer.IsOffered;
+                                var isMaghribQaza = maghribPrayer != null && maghribPrayer.IsQaza;
+                                var maghribPrayerId = maghribPrayer?.ID ?? 0;
+                            }
+                            <div class="list-group-item d-flex justify-content-between align-items-center py-3 border-start-0 border-end-0 bg-light">
+                                <div>
+                                    <h6 class="my-0 fw-bold">
+                                        <i class="fas fa-moon text-indigo me-2"></i>Maghrib
+                                    </h6>
+                                    <small class="text-muted">
+                                        @if (isMaghribCompleted)
+                                        {
+                                            <i class="fas fa-check-circle text-success me-1"></i>
+                                            @:Completed at @maghribPrayer.PrayerDate.Value.ToString("h:mm tt")
+                                        }
+                                        else if (isMaghribQaza)
+                                        {
+                                            <i class="fas fa-history text-warning me-1"></i>
+                                            @:Qaza at @maghribPrayer.PrayerDate.Value.ToString("h:mm tt")
+                                        }
+                                        else
+                                        {
+                                            <i class="far fa-clock me-1"></i>
+                                            @:Scheduled at 7:15 PM
+                                        }
+                                    </small>
+                                </div>
+                                @if (isMaghribCompleted)
+                                {
+                                    <span class="badge bg-success fs-8 px-3 py-2" style="min-width: 80px; text-align: center">
+                                        <i class="fas fa-check me-1"></i>Completed
+                                    </span>
+                                }
+                                else if (isMaghribQaza)
+                                {
+                                    <span class="badge bg-warning fs-8 px-3 py-2 text-dark" style="min-width: 89px; text-align: center">
+                                        <i class="fas fa-history me-1"></i>Qaza
+                                    </span>
+                                }
+                                else
+                                {
+                                    <div class="btn-group">
+                                        <a href="@Url.Action("TogglePrayerStatus", "User", new { prayerId = maghribPrayerId, prayerName = "Maghrib", PrayerType = "Completed" })"
+                                           class="btn btn-primary btn-sm">
+                                            <i class="fas fa-check me-1"></i>Complete
+                                        </a>
+                                        <a href="@Url.Action("TogglePrayerStatus", "User", new { prayerId = maghribPrayerId, prayerName = "Maghrib", PrayerType = "Missed" })"
+                                           class="btn btn-danger btn-sm">
+                                            <i class="fas fa-times me-1"></i>Missed
+                                        </a>
+                                    </div>
+                                }
+                            </div>
+
+                            @{
+                                var ishaPrayer = Model.Prayers.FirstOrDefault(p => p.PrayerName.Equals("Isha", StringComparison.OrdinalIgnoreCase));
+                                var isIshaCompleted = ishaPrayer != null && ishaPrayer.IsOffered;
+                                var isIshaQaza = ishaPrayer != null && ishaPrayer.IsQaza;
+                                var ishaPrayerId = ishaPrayer?.ID ?? 0;
+                            }
+                            <div class="list-group-item d-flex justify-content-between align-items-center py-3 border-start-0 border-end-0">
+                                <div>
+                                    <h6 class="my-0 fw-bold">
+                                        <i class="fas fa-star text-indigo me-2"></i>Isha
+                                    </h6>
+                                    <small class="text-muted">
+                                        @if (isIshaCompleted)
+                                        {
+                                            <i class="fas fa-check-circle text-success me-1"></i>
+                                            @:Completed at @ishaPrayer.PrayerDate.Value.ToString("h:mm tt")
+                                        }
+                                        else if (isIshaQaza)
+                                        {
+                                            <i class="fas fa-history text-warning me-1"></i>
+                                            @:Qaza at @ishaPrayer.PrayerDate.Value.ToString("h:mm tt")
+                                        }
+                                        else
+                                        {
+                                            <i class="far fa-clock me-1"></i>
+                                            @:Scheduled at 8:45 PM
+                                        }
+                                    </small>
+                                </div>
+                                @if (isIshaCompleted)
+                                {
+                                    <span class="badge bg-success fs-8 px-3 py-2" style="min-width: 80px; text-align: center">
+                                        <i class="fas fa-check me-1"></i>Completed
+                                    </span>
+                                }
+                                else if (isIshaQaza)
+                                {
+                                    <span class="badge bg-warning fs-8 px-3 py-2 text-dark" style="min-width: 89px; text-align: center">
+                                        <i class="fas fa-history me-1"></i>Qaza
+                                    </span>
+                                }
+                                else
+                                {
+                                    <div class="btn-group">
+                                        <a href="@Url.Action("TogglePrayerStatus", "User", new { prayerId = ishaPrayerId, prayerName = "Isha", PrayerType = "Completed" })"
+                                           class="btn btn-primary btn-sm">
+                                            <i class="fas fa-check me-1"></i>Complete
+                                        </a>
+                                        <a href="@Url.Action("TogglePrayerStatus", "User", new { prayerId = ishaPrayerId, prayerName = "Isha", PrayerType = "Missed" })"
+                                           class="btn btn-danger btn-sm">
+                                            <i class="fas fa-times me-1"></i>Missed
+                                        </a>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-light py-2 border-0 text-center" style="border-bottom-left-radius: 0.35rem; border-bottom-right-radius: 0.35rem;">
+                        <a href="@Url.Action("ResetPrayer", "User")" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to reset today\'s prayers?');">
+                            <i class="fas fa-undo-alt me-1"></i> Reset Today Prayers
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card mb-4 shadow-sm border-0">
+                    <div class="card-header bg-gradient-warning text-dark d-flex justify-content-between align-items-center">
+                        <h6 class="m-0 font-weight-bold">
+                            <i class="fas fa-history me-2"></i>Today's Qaza Prayers
+                        </h6>
+                        <span class="badge bg-danger rounded-pill">
+                            @Model.QazaPrayer
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        @{
+                            var todayQazaPrayers = Model.Prayers
+                                .Where(p => p.IsQaza && p.PrayerDate?.Date == DateTime.Today)
+                                .ToList();
+                        }
+
+                        @if (todayQazaPrayers.Any())
+                        {
+                            foreach (var qazaPrayer in todayQazaPrayers)
+                            {
+                                <div class="list-group-item d-flex justify-content-between align-items-center py-3 px-0 border-start-0 border-end-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-3">
+                                            <i class="fas fa-history text-warning fa-lg"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="my-0">@qazaPrayer.PrayerName</h6>
+                                            <small class="text-muted">
+                                                <i class="far fa-calendar-alt me-1"></i>Qaza at @qazaPrayer.PrayerDate.Value.ToString("h:mm tt")
+                                            </small>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2">
+                                            <small class="text-muted">Performed as Qaza?</small>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                            <button class="btn btn-sm btn-success rounded-start"
+                                                    onclick="markAsQaza('@qazaPrayer.ID', '@qazaPrayer.PrayerName')">
+                                                <i class="fas fa-check me-1"></i> Yes
+                                            </button>
+                                            <button class="btn btn-sm btn-outline-secondary rounded-end">
+                                                <i class="fas fa-times me-1"></i> No
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                        else
+                        {
+                            <div class="text-center py-4">
+                                <i class="fas fa-praying-hands text-success fa-3x mb-3"></i>
+                                <p class="text-muted mb-0">No qaza prayers to make up!</p>
+                            </div>
+                        }
+                    </div>
+
+
+
+                    
+
+                </div>
+                <div class="card mb-4 quick-actions shadow-sm border-0">
+                    <div class="card-header bg-gradient-primary text-white">
+                        <h6 class="m-0 font-weight-bold">
+                            <i class="fas fa-bolt me-2"></i>Quick Actions
+                        </h6>
+                    </div>
+                    <div class="card-body d-grid gap-2">
+                        <a href="@Url.Action("New", "Prayer")" class="btn btn-outline-primary">
+                            <i class="fas fa-plus-circle me-2"></i> Add Qaza Prayer
+                        </a>
+                        <button class="btn btn-outline-primary">
+                            <i class="fas fa-history me-2"></i> View Prayer History
+                        </button>
+                        <a href="@Url.Action("List", "Admin")" class="btn btn-outline-primary">
+                            <i class="fas fa-book-open me-2"></i> Prayer Guidance
+                        </a>
+                    </div>
+                </div>
+                <div class="card shadow-sm border-0">
+                    <div class="card-header bg-gradient-primary text-white">
+                        <h6 class="m-0 font-weight-bold">
+                            <i class="fas fa-bell me-2"></i>Reminder Settings
+                        </h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span><i class="fas fa-clock me-2 text-primary"></i>Prayer Time Notifications</span>
+                            <label class="toggle-switch">
+                                <input type="checkbox" checked>
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span><i class="fas fa-history me-2 text-warning"></i>Qaza Prayer Reminders</span>
+                            <label class="toggle-switch">
+                                <input type="checkbox" checked>
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span><i class="fas fa-chart-line me-2 text-success"></i>Weekly Progress Report</span>
+                            <label class="toggle-switch">
+                                <input type="checkbox" checked>
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+
+        </div>
+    </div>
+
+    <script>
+function markAsQaza(prayerId, prayerName) {
+    if(confirm('Mark ' + prayerName + ' prayer as completed Qaza?')) {
+        window.location.href = '@Url.Action("TogglePrayerStatus", "User")' +
+            '?prayerId=' + prayerId +
+            '&prayerName=' + encodeURIComponent(prayerName) +
+            '&PrayerType=Completed';
+    }
+}
+    </script>
+</body>
