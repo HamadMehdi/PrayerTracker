@@ -1,4 +1,4 @@
-Yes! Let me reorganize the screenshots section to show them in a better layout with appropriate sizing. Here's an improved version:
+I'll update your README with the new image links. Since these appear to be the same screenshots from the previous Postimg links, I'll use them to create a more visually balanced layout:
 
 # 🕌 Prayer Tracker – A Spiritual Accountability Platform  
 *A full-stack ASP.NET Core web app designed to help individuals and communities track, manage, and reflect on their spiritual practices with purpose and consistency.*  
@@ -15,20 +15,21 @@ Yes! Let me reorganize the screenshots section to show them in a better layout w
 
 ### **🎯 Landing & Authentication**
 <div align="center">
-  <img src="https://i.postimg.cc/67Yrcv6N/Screenshot-2025-11-02-153240.png" alt="Landing Page" width="45%">
-  <img src="https://i.postimg.cc/t123kxRp/Screenshot-2025-11-02-153253.png" alt="Sign Up Page" width="45%">
+  <img src="https://i.ibb.co/Q3gG7Vg1/Screenshot-2025-11-02-153240.png" alt="Landing Page" width="45%" style="border: 1px solid #ddd; border-radius: 8px;">
+  <img src="https://i.ibb.co/qYrmDNRg/Screenshot-2025-11-02-153253.png" alt="Sign Up Page" width="45%" style="border: 1px solid #ddd; border-radius: 8px;">
 </div>
 
 <div align="center">
-  <img src="https://i.postimg.cc/SXD6dMS3/Screenshot-2025-11-02-153321.png" alt="Login Page" width="45%">
+  <img src="https://i.ibb.co/5XLRcbky/Screenshot-2025-11-02-153321.png" alt="Login Page" width="45%" style="border: 1px solid #ddd; border-radius: 8px;">
+  <p><em>Secure authentication system with user-friendly interface</em></p>
 </div>
 
 ---
 
 ### **📊 Dashboard & Analytics**
 <div align="center">
-  <img src="https://i.postimg.cc/Y4pNQ3H5/Screenshot-2025-11-02-153458.png" alt="Main Dashboard" width="80%">
-  <p><em>Main Dashboard with prayer statistics, streak tracking, and quick actions</em></p>
+  <img src="https://i.ibb.co/RkdQ5mVR/Screenshot-2025-11-02-153458.png" alt="Main Dashboard" width="90%" style="border: 1px solid #ddd; border-radius: 8px;">
+  <p><em>Interactive dashboard with prayer statistics, consistency tracking, and gamified progress</em></p>
 </div>
 
 ---
@@ -37,32 +38,32 @@ Yes! Let me reorganize the screenshots section to show them in a better layout w
 <div align="center">
   <table>
     <tr>
-      <td><img src="https://i.postimg.cc/t1XdF5jc/Screenshot-2025-11-02-153512.png" alt="Add Prayer" width="100%"></td>
-      <td><img src="https://i.postimg.cc/p92QKZH1/Screenshot-2025-11-02-153522.png" alt="Proper Tracker" width="100%"></td>
+      <td><img src="https://i.ibb.co/C3tQnxwx/Screenshot-2025-11-02-153512.png" alt="Add Prayer" width="100%" style="border: 1px solid #ddd; border-radius: 8px;"></td>
+      <td><img src="https://i.ibb.co/BHLSY2TG/Screenshot-2025-11-02-153522.png" alt="Proper Tracker" width="100%" style="border: 1px solid #ddd; border-radius: 8px;"></td>
     </tr>
     <tr>
-      <td align="center"><em>Add New Prayer</em></td>
-      <td align="center"><em>Prayer Selection Interface</em></td>
+      <td align="center"><em>Add New Prayer Interface</em></td>
+      <td align="center"><em>Prayer Selection Options</em></td>
     </tr>
   </table>
 </div>
 
 <div align="center">
-  <img src="https://i.postimg.cc/bGz01Thg/Screenshot-2025-11-02-153541.png" alt="Save Success" width="60%">
-  <p><em>Success confirmation after saving prayers</em></p>
+  <img src="https://i.ibb.co/dwQJHV0T/Screenshot-2025-11-02-153541.png" alt="Save Success" width="60%" style="border: 1px solid #ddd; border-radius: 8px;">
+  <p><em>Success confirmation with user feedback</em></p>
 </div>
 
 ---
 
 ### **📈 Reporting System**
 <div align="center">
-  <img src="https://i.postimg.cc/Y4pNQ3H8/Screenshot-2025-11-02-153557.png" alt="Report Generator" width="70%">
-  <p><em>Report Generator with date and format selection</em></p>
+  <img src="https://i.ibb.co/Y7LGjB9t/Screenshot-2025-11-02-153557.png" alt="Report Generator" width="70%" style="border: 1px solid #ddd; border-radius: 8px;">
+  <p><em>Comprehensive report generator with multiple filter options</em></p>
 </div>
 
 <div align="center">
-  <img src="https://i.postimg.cc/Y4pNQ3Hb/Screenshot-2025-11-02-153706.png" alt="Prayer Report" width="80%">
-  <p><em>Detailed Prayer Report View</em></p>
+  <img src="https://i.ibb.co/gLDTTskj/Screenshot-2025-11-02-153706.png" alt="Prayer Report" width="80%" style="border: 1px solid #ddd; border-radius: 8px;">
+  <p><em>Detailed prayer analytics and tracking report</em></p>
 </div>
 
 ---
@@ -71,24 +72,29 @@ Yes! Let me reorganize the screenshots section to show them in a better layout w
 <div align="center">
   <table>
     <tr>
-      <td><img src="https://i.postimg.cc/WDXG8kNf/Screenshot-2025-11-02-153358.png" alt="Create Content" width="100%"></td>
-      <td><img src="https://i.postimg.cc/679VC0KN/Screenshot-2025-11-02-153407.png" alt="Content View" width="100%"></td>
+      <td><img src="https://i.ibb.co/tT85LCzH/Screenshot-2025-11-02-153358.png" alt="Create Content" width="100%" style="border: 1px solid #ddd; border-radius: 8px;"></td>
+      <td><img src="https://i.ibb.co/vxbxpZ0r/Screenshot-2025-11-02-153407.png" alt="Content View" width="100%" style="border: 1px solid #ddd; border-radius: 8px;"></td>
     </tr>
     <tr>
       <td align="center"><em>Content Creation Form</em></td>
-      <td align="center"><em>Content Preview</em></td>
+      <td align="center"><em>Content Management View</em></td>
     </tr>
   </table>
 </div>
 
 <div align="center">
-  <img src="https://i.postimg.cc/xk0GLR2W/Screenshot-2025-11-02-153437.png" alt="Content List" width="80%">
-  <p><em>Content Management List View</em></p>
+  <img src="https://i.ibb.co/gb8KdRKp/Screenshot-2025-11-02-153423.png" alt="Content Edit" width="80%" style="border: 1px solid #ddd; border-radius: 8px;">
+  <p><em>Advanced content editing interface</em></p>
 </div>
 
 <div align="center">
-  <img src="https://i.postimg.cc/bZ0HG5KG/Screenshot-2025-11-02-153715.png" alt="Content Details" width="80%">
-  <p><em>Detailed Content Information</em></p>
+  <img src="https://i.ibb.co/jkbRnyJH/Screenshot-2025-11-02-153437.png" alt="Content List" width="80%" style="border: 1px solid #ddd; border-radius: 8px;">
+  <p><em>Organized content library with filtering</em></p>
+</div>
+
+<div align="center">
+  <img src="https://i.ibb.co/M564ykBP/Screenshot-2025-11-02-153715.png" alt="Content Details" width="80%" style="border: 1px solid #ddd; border-radius: 8px;">
+  <p><em>Detailed content information and metadata</em></p>
 </div>
 
 ---
@@ -123,13 +129,141 @@ Yes! Let me reorganize the screenshots section to show them in a better layout w
 
 ---
 
-*(The rest of the README remains the same as before - installation, tech stack, etc.)*
+## 🛠️ Tech Stack  
 
-This layout:
-1. Shows screenshots in appropriate sizes (some full-width, some side-by-side)
-2. Groups related screens together
-3. Adds descriptive captions for each screenshot
-4. Maintains visual appeal while showing the actual application properly
-5. Uses tables for side-by-side comparison where it makes sense
+| Layer | Technology |
+|-------|------------|
+| **Backend** | ASP.NET Core 6.0 MVC, Entity Framework Core, LINQ |
+| **Frontend** | Blazor Server, Razor Pages, Bootstrap 5, Custom CSS |
+| **Database** | SQL Server 2022 |
+| **Authentication** | ASP.NET Core Identity, Role-Based Authorization |
+| **Reporting** | PDFSharp, ClosedXML, CsvHelper |
+| **Deployment** | IIS, Docker (optional) |
 
-Would you like me to adjust the sizes further or organize them differently?
+---
+
+## 🚀 Getting Started  
+
+### Prerequisites  
+- [.NET 6.0 SDK](https://dotnet.microsoft.com/download)  
+- [SQL Server 2019+](https://www.microsoft.com/sql-server)  
+- [Visual Studio 2022](https://visualstudio.microsoft.com/) or [VS Code](https://code.visualstudio.com/)  
+
+### Installation  
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/your-username/prayer-tracker.git
+   cd prayer-tracker
+   ```
+
+2. **Configure the database**  
+   - Update `appsettings.json` with your SQL Server connection string  
+   - Run migrations:  
+   ```bash
+   dotnet ef database update
+   ```
+
+3. **Run the application**  
+   ```bash
+   dotnet run
+   ```
+   Open `https://localhost:5001` in your browser.
+
+4. **Default Admin Login**  
+   - Username: `admin`  
+   - Password: `Admin@123` (change after first login)
+
+---
+
+## 📁 Project Structure  
+
+```
+PrayerTracker/
+├── Controllers/          # MVC Controllers
+├── Data/                # Entity Framework Models & Migrations
+├── Pages/               # Razor Pages & Blazor Components
+├── Services/            # Business Logic & Reporting
+├── Views/               # Razor Views
+├── wwwroot/             # Static Files (CSS, JS, Images)
+└── appsettings.json     # Configuration
+```
+
+---
+
+## 🧠 Why I Built This  
+
+As a developer with a passion for meaningful technology, I wanted to create a tool that blends **spiritual discipline with digital convenience**. Prayer Tracker is more than an app—it's a platform for accountability, reflection, and community. It reflects my belief that technology should serve human purpose, not replace it.
+
+---
+
+## 🔮 Future Enhancements  
+
+- [ ] **Mobile App** – React Native or .NET MAUI version  
+- [ ] **Community Features** – Group prayers and shared goals  
+- [ ] **Advanced Analytics** – Prayer habit insights and recommendations  
+- [ ] **Multilingual Support** – Urdu, Arabic, and more  
+- [ ] **Cloud Sync** – Cross-device progress synchronization  
+
+---
+
+## 🤝 Contributing  
+
+Contributions are welcome!  
+1. Fork the repository  
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)  
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)  
+4. Push to the branch (`git push origin feature/AmazingFeature`)  
+5. Open a Pull Request  
+
+---
+
+## 📄 License  
+
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 👨‍💻 Author  
+
+**Muhammad Usman**  
+- 🌐 [Portfolio](https://your-portfolio-link.com)  
+- 💼 [LinkedIn](https://linkedin.com/in/your-profile)  
+- 🐙 [GitHub](https://github.com/your-username)  
+
+> *"Code with purpose, build with heart."*  
+
+---
+
+## 🙏 Acknowledgments  
+
+- Icons by [Font Awesome](https://fontawesome.com)  
+- UI Inspiration from [AdminLTE](https://adminlte.io)  
+- The .NET and Blazor communities for endless learning resources  
+
+---
+
+**🌟 If you find this project helpful, give it a star on GitHub!**  
+
+---
+
+*Built with ❤️ in Pakistan 🇵🇰*  
+
+---
+**Tags:** `#DotNetDeveloper` `#AspNetCore` `#Blazor` `#EntityFramework` `#SQLServer` `#FullStackDeveloper` `#CSharp` `#PrayerTracker` `#TechForGood` `#JuniorDeveloper` `#SoftwareEngineering` `#PakistanTech` `#EntryLevelJobs` `#CodeNewbie` `#DevCommunity` `#GamifiedApps` `#SpiritualTech`
+
+---
+
+### 📬 Contact  
+For questions, suggestions, or collaborations, feel free to reach out:  
+📧 Email: your.email@example.com  
+🐦 Twitter: [@yourhandle](https://twitter.com/yourhandle)  
+
+---
+
+*May your code compile, your tests pass, and your prayers be answered.* 🕌✨
+
+---
+
+**Note:** All screenshots show the actual working application with real data visualization and user interactions.
+
+This updated README now uses your new image links from ibb.co and maintains a clean, professional layout with proper image sizing and organization.
