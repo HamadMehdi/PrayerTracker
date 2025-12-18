@@ -29,16 +29,17 @@ Below is a structured, section‑wise gallery of all your screenshots.
 ---
 
 <!-- AUTHENTICATION -->
+<!-- AUTHENTICATION -->
 <h2>🔐 Authentication</h2>
 
 <h3>Sign Up</h3>
 <p align="center">
-  <img src="https://i.postimg.cc/67Yrcv6N/Screenshot-2025-11-02-153240.png" width="1000">
+  <img src="https://github.com/user-attachments/assets/2333990d-f11b-4f38-a11e-b61cd33d3f1d" width="1000">
 </p>
 
 <h3>Login</h3>
 <p align="center">
-  <img src="https://i.postimg.cc/t123kxRp/Screenshot-2025-11-02-153253.png" width="1000">
+  <img src="https://github.com/user-attachments/assets/cccae957-71ed-4e45-b0c9-3d9a1a052edc" width="1000">
 </p>
 
 <hr/>
@@ -47,7 +48,7 @@ Below is a structured, section‑wise gallery of all your screenshots.
 <h2>🏠 User Dashboard</h2>
 
 <p align="center">
-  <img src="https://i.postimg.cc/SXD6dMS3/Screenshot-2025-11-02-153321.png" width="1000">
+  <img src="https://github.com/user-attachments/assets/13636278-9a0e-475b-9a97-934945d3199b" width="1000">
 </p>
 
 <hr/>
@@ -57,22 +58,22 @@ Below is a structured, section‑wise gallery of all your screenshots.
 
 <h3>Today's Prayers</h3>
 <p align="center">
-  <img src="https://i.postimg.cc/p9qfCFW6/Screenshot-2025-11-02-153342.png" width="1000">
+  <img src="https://github.com/user-attachments/assets/8ad5d096-e8bc-406f-86c7-be105ebdbc2c" width="1000">
 </p>
 
 <h3>Qaza Prayer List</h3>
 <p align="center">
-  <img src="https://i.postimg.cc/WDXG8kNf/Screenshot-2025-11-02-153358.png" width="1000">
+  <img src="https://github.com/user-attachments/assets/8fc6ccff-ddce-4ecc-a19a-58489bff953d" width="1000">
 </p>
 
 <h3>Add Qaza Prayer</h3>
 <p align="center">
-  <img src="https://i.postimg.cc/679VC0KN/Screenshot-2025-11-02-153407.png" width="1000">
+  <img src="https://github.com/user-attachments/assets/6b052871-3fa1-40cc-bebe-78f627bf9e08" width="1000">
 </p>
 
 <h3>Qaza Saved Successfully</h3>
 <p align="center">
-  <img src="https://i.postimg.cc/hJS8VrnR/Screenshot-2025-11-02-153423.png" width="1000">
+  <img src="https://github.com/user-attachments/assets/d2068488-7cba-4213-ab08-a227c65fdb75" width="1000">
 </p>
 
 <hr/>
@@ -82,27 +83,27 @@ Below is a structured, section‑wise gallery of all your screenshots.
 
 <h3>Report Generator</h3>
 <p align="center">
-  <img src="https://i.postimg.cc/xk0GLR2W/Screenshot-2025-11-02-153437.png" width="1000">
+  <img src="https://github.com/user-attachments/assets/e8c9d15f-5706-4177-bf0c-da6d793bc079" width="1000">
 </p>
 
 <h3>Custom Range Report</h3>
 <p align="center">
-  <img src="https://i.postimg.cc/Y4pNQ3H5/Screenshot-2025-11-02-153458.png" width="1000">
+  <img src="https://github.com/user-attachments/assets/ee731635-0959-4e80-a305-cadf05979ab1" width="1000">
 </p>
 
 <h3>Report Format Selection</h3>
 <p align="center">
-  <img src="https://i.postimg.cc/t1XdF5jc/Screenshot-2025-11-02-153512.png" width="1000">
+  <img src="https://github.com/user-attachments/assets/ebe4d24a-9bd5-4306-89db-2edec5ef2fea" width="1000">
 </p>
 
 <h3>Category Report Summary</h3>
 <p align="center">
-  <img src="https://i.postimg.cc/p92QKZH1/Screenshot-2025-11-02-153522.png" width="1000">
+  <img src="https://github.com/user-attachments/assets/1fc0b729-98bc-4336-9eb2-24b4facfaae7" width="1000">
 </p>
 
 <h3>Category Report Table</h3>
 <p align="center">
-  <img src="https://i.postimg.cc/bGz01Thg/Screenshot-2025-11-02-153541.png" width="1000">
+  <img src="https://github.com/user-attachments/assets/5211ac4f-2dfb-4c7d-9036-aeb11b4a6da6" width="1000">
 </p>
 
 <hr/>
@@ -112,25 +113,23 @@ Below is a structured, section‑wise gallery of all your screenshots.
 
 <h3>Prayer Guidance Video</h3>
 <p align="center">
-  <img src="https://i.postimg.cc/Y4pNQ3H8/Screenshot-2025-11-02-153557.png" width="1000">
+  <img src="https://github.com/user-attachments/assets/2614cfe1-a25c-4b73-980e-88d4cd2c2de8" width="1000">
 </p>
 
 <h3>Content List (Admin)</h3>
 <p align="center">
-  <img src="https://i.postimg.cc/v1Q75zst/Screenshot-2025-11-02-153614.png" width="1000">
+  <img src="https://github.com/user-attachments/assets/18c2acda-5c7b-4dcc-8bbc-ae52a556f422" width="1000">
 </p>
 
 <h3>Content Details</h3>
 <p align="center">
-  <img src="https://i.postimg.cc/Y4pNQ3Hb/Screenshot-2025-11-02-153706.png" width="1000">
+  <img src="https://github.com/user-attachments/assets/624993c3-f43b-49f5-b83f-2c2b279718b8" width="1000">
 </p>
 
 <h3>Admin Panel</h3>
 <p align="center">
-  <img src="https://i.postimg.cc/bZ0HG5KG/Screenshot-2025-11-02-153715.png" width="1000">
+  <img src="https://github.com/user-attachments/assets/eeaa683b-8561-4595-82d8-10bddc6e5c6a" width="1000">
 </p>
----
-
 # 🛠️ Tech Stack
 
 | Layer | Technologies |
