@@ -48,7 +48,7 @@ Below is a structured, section‑wise gallery of all your screenshots.
 <hr/>
 
 <!-- PRAYER LOGGING -->
-<h2>🙏 Admin Dashboard</h2>
+<h2> Admin Dashboard</h2>
 
 <h3>Managing Users</h3>
 <p align="center">
@@ -60,12 +60,12 @@ Below is a structured, section‑wise gallery of all your screenshots.
   <img src="https://github.com/user-attachments/assets/8fc6ccff-ddce-4ecc-a19a-58489bff953d" width="1000">
 </p>
 
-<h3>Enable Disable Users</h3>
+<h3>Enable/Disable Users</h3>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6b052871-3fa1-40cc-bebe-78f627bf9e08" width="1000">
 </p>
 
-<h3>Qaza Saved Successfully</h3>
+<h3>Admin Text Based Content Generation</h3>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/d2068488-7cba-4213-ab08-a227c65fdb75" width="1000">
 </p>
@@ -73,29 +73,29 @@ Below is a structured, section‑wise gallery of all your screenshots.
 <hr/>
 
 <!-- REPORTS -->
-<h2>📈 Reports & Analytics</h2>
+<h2>User Dashboard</h2>
 
-<h3>Report Generator</h3>
+<h3>Prayer Guidance </h3>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/e8c9d15f-5706-4177-bf0c-da6d793bc079" width="1000">
 </p>
 
-<h3>Custom Range Report</h3>
+<h3>User Dashboard with Prayers Log</h3>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ee731635-0959-4e80-a305-cadf05979ab1" width="1000">
 </p>
 
-<h3>Report Format Selection</h3>
+<h3>Add Qaza based on Past Dates</h3>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ebe4d24a-9bd5-4306-89db-2edec5ef2fea" width="1000">
 </p>
 
-<h3>Qaza Saved Successfully</h3>
+<h3>Add Qaza based on Past Dates</h3>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/1fc0b729-98bc-4336-9eb2-24b4facfaae7" width="1000">
 </p>
 
-<h3>Category Report Table</h3>
+<h3> Qaza Saved Successfully</h3>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/5211ac4f-2dfb-4c7d-9036-aeb11b4a6da6" width="1000">
 </p>
@@ -103,24 +103,24 @@ Below is a structured, section‑wise gallery of all your screenshots.
 <hr/>
 
 <!-- CONTENT MANAGEMENT -->
-<h2>🎓 Prayer Guidance & Content Management</h2>
+<h2>📈 Reports & Analytics</h2>
 
-<h3>Prayer Guidance Video</h3>
+<h3>Report Geneation Default</h3>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/2614cfe1-a25c-4b73-980e-88d4cd2c2de8" width="1000">
 </p>
 
-<h3>Content List (Admin)</h3>
+<h3>Report Geneation</h3>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/18c2acda-5c7b-4dcc-8bbc-ae52a556f422" width="1000">
 </p>
 
-<h3>Content Details</h3>
+<h3>Category Report Table</h3>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/624993c3-f43b-49f5-b83f-2c2b279718b8" width="1000">
 </p>
 
-<h3>Admin Panel</h3>
+<h3>Content List View</h3>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/eeaa683b-8561-4595-82d8-10bddc6e5c6a" width="1000">
 </p>
