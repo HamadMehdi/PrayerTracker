@@ -16,9 +16,9 @@ A full‑stack ASP.NET Core application designed to help individuals and communi
 
 ---
 
-# 📸 Screenshots
+# 📸 Prayer Tracker VisualS
 
-Below is a structured, section‑wise gallery of all your screenshots.
+Below is a structured, section‑wise gallery of all features of Prayer Tracker.
 
 ---
 
@@ -128,7 +128,7 @@ Below is a structured, section‑wise gallery of all your screenshots.
 
 | Layer | Technologies |
 |-------|--------------|
-| **Frontend** | Blazor (Server), Bootstrap, Custom CSS |
+| **Frontend** | HTML, Bootstrap, Custom CSS |
 | **Backend** | ASP.NET Core MVC, Razor Pages |
 | **Database** | SQL Server, Entity Framework Core |
 | **Security** | ASP.NET Identity, Role-Based Access |
@@ -193,12 +193,3 @@ For major changes, please open an issue first to discuss what you’d like to im
 `#JuniorDeveloper` `#PakistanTech` `#GamifiedApps`
 
 ---
-
-If you'd like, I can also:
-
-✅ Add a **GIF demo** section  
-✅ Create a **badges row** (build, license, tech stack icons)  
-✅ Add a **project architecture diagram**  
-✅ Improve the banner/header design  
-
-Just tell me the style you want.
