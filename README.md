@@ -1,5 +1,5 @@
 
-# 🧠 Prayer Tracker – ASP.NET Core Web App for Spiritual Accountability
+# 🧠 Prayer Tracker – ASP.NET MVC Web App for Spiritual Accountability
 
 A full‑stack ASP.NET Core application designed to help individuals and communities **track, manage, and reflect** on their daily prayers. Built with clean architecture, role‑based access, and a modern UI, Prayer Tracker blends technology with spiritual purpose.
 
