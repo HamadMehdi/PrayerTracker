@@ -1,3 +1,5 @@
+Here's your complete README with the actual images embedded:
+
 # 🕌 Prayer Tracker – A Spiritual Accountability Platform  
 *A full-stack ASP.NET Core web app designed to help individuals and communities track, manage, and reflect on their spiritual practices with purpose and consistency.*  
 
@@ -54,16 +56,30 @@
 
 ## 📸 Screenshots  
 
-| Dashboard | Prayer Logging | Report Generator |
-|-----------|----------------|------------------|
-https://postimg.cc/gallery/K2v42q0
+### **Landing & Authentication**
+| Landing Page | Sign Up Page | Login Page |
+|--------------|--------------|------------|
+| ![Landing Page](https://i.postimg.cc/67Yrcv6N/Screenshot-2025-11-02-153240.png) | ![Sign Up](https://i.postimg.cc/t123kxRp/Screenshot-2025-11-02-153253.png) | ![Login](https://i.postimg.cc/SXD6dMS3/Screenshot-2025-11-02-153321.png) |
 
+### **Content Management**
+| Content Creation | Content Preview | Content List |
+|------------------|-----------------|--------------|
+| ![Create Content](https://i.postimg.cc/WDXG8kNf/Screenshot-2025-11-02-153358.png) | ![Content View](https://i.postimg.cc/679VC0KN/Screenshot-2025-11-02-153407.png) | ![Content List](https://i.postimg.cc/xk0GLR2W/Screenshot-2025-11-02-153437.png) |
 
-| ![Dashboard](https://via.placeholder.com/400x250/6c757d/fff?text=Dashboard+View) | ![Prayer Log](https://via.placeholder.com/400x250/0d6efd/fff?text=Prayer+Logging) | ![Report Gen](https://via.placeholder.com/400x250/198754/fff?text=Report+Generator) |
+### **Dashboard & Tracking**
+| Main Dashboard | Prayer Logging | Prayer Reports |
+|----------------|----------------|----------------|
+| ![Dashboard](https://i.postimg.cc/Y4pNQ3H5/Screenshot-2025-11-02-153458.png) | ![Add Prayer](https://i.postimg.cc/t1XdF5jc/Screenshot-2025-11-02-153512.png) | ![Reports](https://i.postimg.cc/Y4pNQ3H8/Screenshot-2025-11-02-153557.png) |
 
-| Content Management | User Management | Mobile View |
-|--------------------|-----------------|-------------|
-| ![Content](https://via.placeholder.com/400x250/ffc107/000?text=Content+Manager) | ![Users](https://via.placeholder.com/400x250/dc3545/fff?text=User+Roles) | ![Mobile](https://via.placeholder.com/400x250/6f42c1/fff?text=Mobile+View) |
+### **Prayer Management**
+| Proper Tracker | Save Success | Report Generator |
+|----------------|--------------|------------------|
+| ![Proper Tracker](https://i.postimg.cc/p92QKZH1/Screenshot-2025-11-02-153522.png) | ![Save Success](https://i.postimg.cc/bGz01Thg/Screenshot-2025-11-02-153541.png) | ![Report Generator](https://i.postimg.cc/v1Q75zst/Screenshot-2025-11-02-153614.png) |
+
+### **Reports & Data**
+| Prayer Report | Content Details |
+|---------------|-----------------|
+| ![Report View](https://i.postimg.cc/Y4pNQ3Hb/Screenshot-2025-11-02-153706.png) | ![Content Details](https://i.postimg.cc/bZ0HG5KG/Screenshot-2025-11-02-153715.png) |
 
 ---
 
@@ -117,7 +133,7 @@ PrayerTracker/
 
 ## 🧠 Why I Built This  
 
-As a developer with a passion for meaningful technology, I wanted to create a tool that blends **spiritual discipline with digital convenience**. Prayer Tracker is more than an app—it’s a platform for accountability, reflection, and community. It reflects my belief that technology should serve human purpose, not replace it.
+As a developer with a passion for meaningful technology, I wanted to create a tool that blends **spiritual discipline with digital convenience**. Prayer Tracker is more than an app—it's a platform for accountability, reflection, and community. It reflects my belief that technology should serve human purpose, not replace it.
 
 ---
 
@@ -155,7 +171,7 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
 - 💼 [LinkedIn](https://linkedin.com/in/your-profile)  
 - 🐙 [GitHub](https://github.com/your-username)  
 
-> *“Code with purpose, build with heart.”*  
+> *"Code with purpose, build with heart."*  
 
 ---
 
