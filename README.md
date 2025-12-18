@@ -15,12 +15,12 @@ Perfect! Now that you've uploaded screenshots to your repository, let's update t
 
 ### **🎯 Landing & Authentication**
 <div align="center">
-  <img src="./screenshots/Screenshot-2025-11-02-153240.png" alt="Landing Page" width="45%" style="border: 1px solid #ddd; border-radius: 8px;">
-  <img src="./screenshots/Screenshot-2025-11-02-153253.png" alt="Sign Up Page" width="45%" style="border: 1px solid #ddd; border-radius: 8px;">
+  <img src="./Screenshots/Screenshot-2025-11-02-153240.png" alt="Landing Page" width="45%" style="border: 1px solid #ddd; border-radius: 8px;">
+  <img src="./Screenshots/Screenshot-2025-11-02-153253.png" alt="Sign Up Page" width="45%" style="border: 1px solid #ddd; border-radius: 8px;">
 </div>
 
 <div align="center">
-  <img src="./screenshots/Screenshot-2025-11-02-153321.png" alt="Login Page" width="45%" style="border: 1px solid #ddd; border-radius: 8px;">
+  <img src="./Screenshots/Screenshot-2025-11-02-153321.png" alt="Login Page" width="45%" style="border: 1px solid #ddd; border-radius: 8px;">
   <p><em>Secure authentication system with user-friendly interface</em></p>
 </div>
 
@@ -28,7 +28,7 @@ Perfect! Now that you've uploaded screenshots to your repository, let's update t
 
 ### **📊 Dashboard & Analytics**
 <div align="center">
-  <img src="./screenshots/Screenshot-2025-11-02-153458.png" alt="Main Dashboard" width="90%" style="border: 1px solid #ddd; border-radius: 8px;">
+  <img src="./Screenshots/Screenshot-2025-11-02-153458.png" alt="Main Dashboard" width="90%" style="border: 1px solid #ddd; border-radius: 8px;">
   <p><em>Interactive dashboard with prayer statistics, consistency tracking, and gamified progress</em></p>
 </div>
 
@@ -38,8 +38,8 @@ Perfect! Now that you've uploaded screenshots to your repository, let's update t
 <div align="center">
   <table>
     <tr>
-      <td><img src="./screenshots/Screenshot-2025-11-02-153512.png" alt="Add Prayer" width="100%" style="border: 1px solid #ddd; border-radius: 8px;"></td>
-      <td><img src="./screenshots/Screenshot-2025-11-02-153522.png" alt="Proper Tracker" width="100%" style="border: 1px solid #ddd; border-radius: 8px;"></td>
+      <td><img src="./Screenshots/Screenshot-2025-11-02-153512.png" alt="Add Prayer" width="100%" style="border: 1px solid #ddd; border-radius: 8px;"></td>
+      <td><img src="./Screenshots/Screenshot-2025-11-02-153522.png" alt="Proper Tracker" width="100%" style="border: 1px solid #ddd; border-radius: 8px;"></td>
     </tr>
     <tr>
       <td align="center"><em>Add New Prayer Interface</em></td>
@@ -49,7 +49,7 @@ Perfect! Now that you've uploaded screenshots to your repository, let's update t
 </div>
 
 <div align="center">
-  <img src="./screenshots/Screenshot-2025-11-02-153541.png" alt="Save Success" width="60%" style="border: 1px solid #ddd; border-radius: 8px;">
+  <img src="./Screenshots/Screenshot-2025-11-02-153541.png" alt="Save Success" width="60%" style="border: 1px solid #ddd; border-radius: 8px;">
   <p><em>Success confirmation with user feedback</em></p>
 </div>
 
@@ -57,12 +57,12 @@ Perfect! Now that you've uploaded screenshots to your repository, let's update t
 
 ### **📈 Reporting System**
 <div align="center">
-  <img src="./screenshots/Screenshot-2025-11-02-153557.png" alt="Report Generator" width="70%" style="border: 1px solid #ddd; border-radius: 8px;">
+  <img src="./Screenshots/Screenshot-2025-11-02-153557.png" alt="Report Generator" width="70%" style="border: 1px solid #ddd; border-radius: 8px;">
   <p><em>Comprehensive report generator with multiple filter options</em></p>
 </div>
 
 <div align="center">
-  <img src="./screenshots/Screenshot-2025-11-02-153706.png" alt="Prayer Report" width="80%" style="border: 1px solid #ddd; border-radius: 8px;">
+  <img src="./Screenshots/Screenshot-2025-11-02-153706.png" alt="Prayer Report" width="80%" style="border: 1px solid #ddd; border-radius: 8px;">
   <p><em>Detailed prayer analytics and tracking report</em></p>
 </div>
 
@@ -72,8 +72,8 @@ Perfect! Now that you've uploaded screenshots to your repository, let's update t
 <div align="center">
   <table>
     <tr>
-      <td><img src="./screenshots/Screenshot-2025-11-02-153358.png" alt="Create Content" width="100%" style="border: 1px solid #ddd; border-radius: 8px;"></td>
-      <td><img src="./screenshots/Screenshot-2025-11-02-153407.png" alt="Content View" width="100%" style="border: 1px solid #ddd; border-radius: 8px;"></td>
+      <td><img src="./Screenshots/Screenshot-2025-11-02-153358.png" alt="Create Content" width="100%" style="border: 1px solid #ddd; border-radius: 8px;"></td>
+      <td><img src="./Screenshots/Screenshot-2025-11-02-153407.png" alt="Content View" width="100%" style="border: 1px solid #ddd; border-radius: 8px;"></td>
     </tr>
     <tr>
       <td align="center"><em>Content Creation Form</em></td>
@@ -83,17 +83,17 @@ Perfect! Now that you've uploaded screenshots to your repository, let's update t
 </div>
 
 <div align="center">
-  <img src="./screenshots/Screenshot-2025-11-02-153423.png" alt="Content Edit" width="80%" style="border: 1px solid #ddd; border-radius: 8px;">
+  <img src="./Screenshots/Screenshot-2025-11-02-153423.png" alt="Content Edit" width="80%" style="border: 1px solid #ddd; border-radius: 8px;">
   <p><em>Advanced content editing interface</em></p>
 </div>
 
 <div align="center">
-  <img src="./screenshots/Screenshot-2025-11-02-153437.png" alt="Content List" width="80%" style="border: 1px solid #ddd; border-radius: 8px;">
+  <img src="./Screenshots/Screenshot-2025-11-02-153437.png" alt="Content List" width="80%" style="border: 1px solid #ddd; border-radius: 8px;">
   <p><em>Organized content library with filtering</em></p>
 </div>
 
 <div align="center">
-  <img src="./screenshots/Screenshot-2025-11-02-153715.png" alt="Content Details" width="80%" style="border: 1px solid #ddd; border-radius: 8px;">
+  <img src="./Screenshots/Screenshot-2025-11-02-153715.png" alt="Content Details" width="80%" style="border: 1px solid #ddd; border-radius: 8px;">
   <p><em>Detailed content information and metadata</em></p>
 </div>
 
