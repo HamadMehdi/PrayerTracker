@@ -28,72 +28,107 @@ Below is a structured, section‑wise gallery of all your screenshots.
 
 ---
 
-## 🔐 Authentication
+<!-- AUTHENTICATION -->
+<h2>🔐 Authentication</h2>
 
-### **Sign Up**
-![Sign Up](https://i.postimg.cc/67Yrcv6N/Screenshot-2025-11-02-153240.png)
+<h3>Sign Up</h3>
+<p align="center">
+  <img src="https://i.postimg.cc/67Yrcv6N/Screenshot-2025-11-02-153240.png" width="1000">
+</p>
 
-### **Login**
-![Login](https://i.postimg.cc/t123kxRp/Screenshot-2025-11-02-153253.png)
+<h3>Login</h3>
+<p align="center">
+  <img src="https://i.postimg.cc/t123kxRp/Screenshot-2025-11-02-153253.png" width="1000">
+</p>
 
----
+<hr/>
 
-## 🏠 User Dashboard
+<!-- DASHBOARD -->
+<h2>🏠 User Dashboard</h2>
 
-### **Dashboard Overview**
-![Dashboard](https://i.postimg.cc/SXD6dMS3/Screenshot-2025-11-02-153321.png)
+<p align="center">
+  <img src="https://i.postimg.cc/SXD6dMS3/Screenshot-2025-11-02-153321.png" width="1000">
+</p>
 
----
+<hr/>
 
-## 🙏 Prayer Logging
+<!-- PRAYER LOGGING -->
+<h2>🙏 Prayer Logging</h2>
 
-### **Today's Prayers**
-![Prayer Log](https://i.postimg.cc/p9qfCFW6/Screenshot-2025-11-02-153342.png)
+<h3>Today's Prayers</h3>
+<p align="center">
+  <img src="https://i.postimg.cc/p9qfCFW6/Screenshot-2025-11-02-153342.png" width="1000">
+</p>
 
-### **Qaza Prayer List**
-![Qaza List](https://i.postimg.cc/WDXG8kNf/Screenshot-2025-11-02-153358.png)
+<h3>Qaza Prayer List</h3>
+<p align="center">
+  <img src="https://i.postimg.cc/WDXG8kNf/Screenshot-2025-11-02-153358.png" width="1000">
+</p>
 
-### **Add Qaza Prayer**
-![Add Qaza](https://i.postimg.cc/679VC0KN/Screenshot-2025-11-02-153407.png)
+<h3>Add Qaza Prayer</h3>
+<p align="center">
+  <img src="https://i.postimg.cc/679VC0KN/Screenshot-2025-11-02-153407.png" width="1000">
+</p>
 
-### **Qaza Saved Successfully**
-![Success](https://i.postimg.cc/hJS8VrnR/Screenshot-2025-11-02-153423.png)
+<h3>Qaza Saved Successfully</h3>
+<p align="center">
+  <img src="https://i.postimg.cc/hJS8VrnR/Screenshot-2025-11-02-153423.png" width="1000">
+</p>
 
----
+<hr/>
 
-## 📈 Reports & Analytics
+<!-- REPORTS -->
+<h2>📈 Reports & Analytics</h2>
 
-### **Report Generator**
-![Report Generator](https://i.postimg.cc/xk0GLR2W/Screenshot-2025-11-02-153437.png)
+<h3>Report Generator</h3>
+<p align="center">
+  <img src="https://i.postimg.cc/xk0GLR2W/Screenshot-2025-11-02-153437.png" width="1000">
+</p>
 
-### **Custom Range Report**
-![Custom Range](https://i.postimg.cc/Y4pNQ3H5/Screenshot-2025-11-02-153458.png)
+<h3>Custom Range Report</h3>
+<p align="center">
+  <img src="https://i.postimg.cc/Y4pNQ3H5/Screenshot-2025-11-02-153458.png" width="1000">
+</p>
 
-### **Report Format Selection**
-![Report Format](https://i.postimg.cc/t1XdF5jc/Screenshot-2025-11-02-153512.png)
+<h3>Report Format Selection</h3>
+<p align="center">
+  <img src="https://i.postimg.cc/t1XdF5jc/Screenshot-2025-11-02-153512.png" width="1000">
+</p>
 
-### **Category Report Summary**
-![Category Summary](https://i.postimg.cc/p92QKZH1/Screenshot-2025-11-02-153522.png)
+<h3>Category Report Summary</h3>
+<p align="center">
+  <img src="https://i.postimg.cc/p92QKZH1/Screenshot-2025-11-02-153522.png" width="1000">
+</p>
 
-### **Category Report Table**
-![Category Table](https://i.postimg.cc/bGz01Thg/Screenshot-2025-11-02-153541.png)
+<h3>Category Report Table</h3>
+<p align="center">
+  <img src="https://i.postimg.cc/bGz01Thg/Screenshot-2025-11-02-153541.png" width="1000">
+</p>
 
----
+<hr/>
 
-## 🎓 Prayer Guidance & Content Management
+<!-- CONTENT MANAGEMENT -->
+<h2>🎓 Prayer Guidance & Content Management</h2>
 
-### **Prayer Guidance Video**
-![Video Guidance](https://i.postimg.cc/Y4pNQ3H8/Screenshot-2025-11-02-153557.png)
+<h3>Prayer Guidance Video</h3>
+<p align="center">
+  <img src="https://i.postimg.cc/Y4pNQ3H8/Screenshot-2025-11-02-153557.png" width="1000">
+</p>
 
-### **Content List (Admin)**
-![Content List](https://i.postimg.cc/v1Q75zst/Screenshot-2025-11-02-153614.png)
+<h3>Content List (Admin)</h3>
+<p align="center">
+  <img src="https://i.postimg.cc/v1Q75zst/Screenshot-2025-11-02-153614.png" width="1000">
+</p>
 
-### **Content Details**
-![Content Details](https://i.postimg.cc/Y4pNQ3Hb/Screenshot-2025-11-02-153706.png)
+<h3>Content Details</h3>
+<p align="center">
+  <img src="https://i.postimg.cc/Y4pNQ3Hb/Screenshot-2025-11-02-153706.png" width="1000">
+</p>
 
-### **Admin Panel**
-![Admin Panel](https://i.postimg.cc/bZ0HG5KG/Screenshot-2025-11-02-153715.png)
-
+<h3>Admin Panel</h3>
+<p align="center">
+  <img src="https://i.postimg.cc/bZ0HG5KG/Screenshot-2025-11-02-153715.png" width="1000">
+</p>
 ---
 
 # 🛠️ Tech Stack
