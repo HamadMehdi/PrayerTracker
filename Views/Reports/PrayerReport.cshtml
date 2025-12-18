@@ -1,0 +1,229 @@
+﻿@model PrayerTracker1.Models.ReportsVM.ReportsVM
+<head>
+    <link href="~/Content/css/Print.css" rel="stylesheet" />
+</head>
+
+<div class="container-fluid mt-4">
+    <div class="card shadow-lg rounded border-0">
+        <div class="report-header gradient-background">
+            <div class="report-banner">
+                <div class="report-icon pulse-animation">
+                    <i class="fas fa-mosque"></i>
+                </div>
+                <div class="report-title">
+                    <h2 id="reportTypeTitle">@(Model.ReportType == "daily" ? "Daily Prayer Report" : $"{Model.ReportType} Prayer Report")</h2>
+                    <div class="report-subtitle" id="reportDateRange">@Model.Date.ToString("MMMM dd, yyyy")</div>
+                </div>
+                <div class="report-actions">
+                    <a href="@Url.Action("New", "Reports")" class="btn btn-primary btn-sm btn-elevated">
+                        <i class="fas fa-plus me-1"></i> New Report
+                    </a>
+                    <a href="#" class="btn btn-light btn-sm ms-2 btn-elevated" onclick="window.print()">
+                        <i class="fas fa-print me-1"></i> Print
+                    </a>
+                </div>
+            </div>
+
+            <div class="report-details glass-effect">
+                <div class="row">
+                    <div class="col-md-3 report-detail-item">
+                        <div class="detail-label"><i class="fas fa-file-alt me-2"></i>Report Type</div>
+                        <div class="detail-value" id="reportTypeValue">@Model.ReportType</div>
+                    </div>
+                    <div class="col-md-3 report-detail-item">
+                        <div class="detail-label"><i class="fas fa-pray me-2"></i>Prayer Selection</div>
+                        <div class="detail-value" id="prayerTypeValue">@Model.SelectedPrayer</div>
+                    </div>
+                    <div class="col-md-3 report-detail-item">
+                        <div class="detail-label"><i class="fas fa-calendar-alt me-2"></i>Selected Date</div>
+                        <div class="detail-value" id="dateRangeValue">@Model.Date.ToString("yyyy-MM-dd")</div>
+                    </div>
+                  
+                    @if (ViewBag.ExistingPrayer != null && ViewBag.ExistingPrayer.ToString().ToLower() == "true")
+                    {
+                        <div class="col-md-3 report-detail-item">
+                            <div class="detail-label"><i class="fas fa-calendar-alt me-2"></i>To Date</div>
+                            <div class="detail-value" id="dateRangeValue">@Model.Todate.ToString("yyyy-MM-dd")</div>
+                        </div>
+                    }
+
+
+                    <div class="col-md-3 report-detail-item">
+                        <div class="detail-label"><i class="fas fa-hashtag me-2"></i>Total Prayers</div>
+                        <div class="detail-value" id="totalPrayersValue">@Model.TotalPrayers</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="report-summary">
+                <div class="summary-item completed card-hover-effect">
+                    <div class="summary-icon"><i class="fas fa-check-circle"></i></div>
+                    <div class="summary-count">@Model.Completed</div>
+                    <div class="summary-label">Completed</div>
+                </div>
+                <div class="summary-item qaza card-hover-effect">
+                    <div class="summary-icon"><i class="fas fa-clock"></i></div>
+                    <div class="summary-count">@Model.Qaza</div>
+                    <div class="summary-label">Qaza</div>
+                </div>
+                <div class="summary-item completion-rate card-hover-effect">
+                    <div class="summary-icon"><i class="fas fa-chart-pie"></i></div>
+                    <div class="summary-count">@Model.CompletionRate</div>
+                    <div class="summary-label">Completion Rate</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-header bg-gradient-primary text-white d-flex justify-content-between align-items-center py-3">
+            <div class="d-flex align-items-center">
+                <i class="fas fa-list me-2"></i>
+                <h5 class="mb-0">Prayer Details</h5>
+            </div>
+            <div class="report-filter dropdown">
+                <button class="btn btn-info dropdown-toggle btn-elevated" type="button" id="filterDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-filter me-1"></i> Filter: All Statuses
+                </button>
+                <ul class="dropdown-menu animated fadeIn" aria-labelledby="filterDropdown">
+                    <li><a class="dropdown-item filter-option active" href="#" data-status="all">All Statuses</a></li>
+                    <li><a class="dropdown-item filter-option" href="#" data-status="completed">Completed Only</a></li>
+                    <li><a class="dropdown-item filter-option" href="#" data-status="qaza">Qaza Only</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover mb-0 custom-table" id="prayerTable">
+                    <thead class="table-light">
+                        <tr>
+                            <th class="text-center align-middle">Date</th>
+                            <th class="text-center align-middle">Prayer Name</th>
+                            <th class="text-center align-middle">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.Prayers != null && Model.Prayers.Any())
+                        {
+                            foreach (var prayer in Model.Prayers)
+                            {
+                                <tr data-status="@(prayer.Status?.ToLower())" class="fade-in hover-shadow">
+                                    <td class="text-center align-middle">@prayer.PrayerDate.ToString("yyyy-MM-dd")</td>
+                                    <td class="text-center align-middle">@prayer.PrayerName</td>
+                                    <td class="text-center align-middle">
+                                        <div class="d-flex justify-content-center">
+                                            <span class="badge @(prayer.Status == "Completed" ? "bg-success" : "bg-warning text-dark") status-badge"
+                                                  style="min-width: 120px; text-align: center; padding: 0.5rem 1rem;">
+                                                @prayer.Status
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td colspan="3" class="text-center text-muted">No prayer records found</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="text-center mt-4 mb-4">
+            <button type="button" class="btn btn-outline-secondary btn-elevated">
+                <i class="fa fa-undo me-1"></i> Reset Today's Prayers
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function updateReportHeader(config) {
+      const defaults = {
+        reportType: '@Model.ReportType',
+        prayerType: '@Model.SelectedPrayer',
+        dateRange: '@Model.Date.ToString("MMMM dd, yyyy")',
+        totalPrayers: '@Model.TotalPrayers',
+        completed: '@Model.Completed',
+        qaza: '@Model.Qaza'
+      };
+
+      const s = {...defaults, ...config};
+      const title = s.reportType.charAt(0).toUpperCase() + s.reportType.slice(1);
+
+      document.getElementById('reportTypeTitle').textContent = `${title} Prayer Report`;
+      document.getElementById('reportDateRange').textContent = s.dateRange;
+      document.getElementById('reportTypeValue').textContent = title;
+      document.getElementById('prayerTypeValue').textContent = s.prayerType;
+      document.getElementById('dateRangeValue').textContent = s.dateRange;
+      document.getElementById('totalPrayersValue').textContent = s.totalPrayers;
+
+      document.querySelector('.summary-item.completed .summary-count').textContent = s.completed;
+      document.querySelector('.summary-item.qaza .summary-count').textContent = s.qaza;
+
+      const icons = {'daily': 'fa-calendar-day', 'weekly': 'fa-calendar-week', 'monthly': 'fa-calendar-alt', 'category': 'fa-tags'};
+      document.querySelector('.report-icon i').className = 'fas ' + (icons[s.reportType.toLowerCase()] || 'fa-mosque');
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      updateReportHeader();
+
+      const observer = new IntersectionObserver(entries =>
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateY(0)';
+            observer.unobserve(entry.target);
+          }
+        }), {threshold: 0.1}
+      );
+
+      document.querySelectorAll('.fade-in').forEach(el => {
+        el.style.opacity = 0;
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        observer.observe(el);
+      });
+
+      document.head.appendChild(Object.assign(document.createElement('link'), {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&family=Tajawal:wght@300;400;500;700&display=swap'
+      }));
+    });
+</script>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+           
+            $('.filter-option').click(function (e) {
+                e.preventDefault();
+
+                $('.filter-option').removeClass('active');
+                $(this).addClass('active');
+
+                var statusText = $(this).text();
+                $('#filterDropdown').html('<i class="fas fa-filter me-1"></i> Filter: ' + statusText);
+
+                var status = $(this).data('status');
+
+                filterPrayerTable(status);
+            });
+
+            function filterPrayerTable(status) {
+                if (status === 'all') {
+                    $('#prayerTable tbody tr').show();
+                } else {
+                    $('#prayerTable tbody tr').each(function () {
+                        var rowStatus = $(this).data('status');
+                        $(this).toggle(rowStatus === status);
+                    });
+                }
+            }
+
+            filterPrayerTable('all');
+        });
+    </script>
+}

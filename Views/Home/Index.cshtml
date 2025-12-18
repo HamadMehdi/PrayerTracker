@@ -1,0 +1,203 @@
+﻿@{ Layout = null; }
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prayer Tracker</title>
+    <link href="~/Content/Fonts/css/all.min.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Fonts/font.css" rel="stylesheet" />
+    <link href="~/Content/css/index.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white shadow-sm">
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center gap-2" href="@Url.Action("Index", "Home")">
+                <img src="~/Content/Image/Videos/LOGO.jpg" alt="Logo" class="img-fluid" style="max-height: 40px; width: auto;" />
+                <span class="fw-bold text-primary-emphasis">Prayer Tracker</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link position-relative" href="#">
+                            Home
+                            <span class="nav-link-underline"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link position-relative" href="@Url.Action("About", "Home")">
+                            About
+                            <span class="nav-link-underline"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link position-relative" href="#">
+                            Features
+                            <span class="nav-link-underline"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link position-relative" href="@Url.Action("Login", "Home")">
+                            Login
+                            <span class="nav-link-underline"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link btn btn-outline px-4" href="@Url.Action("New", "User")">
+                            Sign Up
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <div class="container hero-content text-center">
+            <h1 class="fade-in">Track Your Prayers with Ease</h1>
+            <p class="fade-in">Keep track of your daily prayers, manage missed prayers, and receive timely reminders - all in one place.</p>
+
+        </div>
+    </div>
+
+
+    <div class="features-section">
+        <div class="container">
+            <h2 class="text-center section-title">Why Choose PrayerTracker?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center p-5">
+                            <i class="fas fa-clock feature-icon"></i>
+                            <h5 class="feature-title">Prayer Time Reminders</h5>
+                            <p class="feature-text">Never miss a prayer with customizable alerts based on your location and preferences.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center p-5">
+                            <i class="fas fa-calendar-check feature-icon"></i>
+                            <h5 class="feature-title">Track Missed Prayers</h5>
+                            <p class="feature-text">Easily keep track of missed prayers and make them up with our Qaza management system.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center p-5">
+                            <i class="fas fa-book-reader feature-icon"></i>
+                            <h5 class="feature-title">Educational Resources</h5>
+                            <p class="feature-text">Learn more about prayers with our comprehensive guides and educational content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="statistics-section">
+        <div class="container stat-container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="stat-number">10K+</div>
+                    <p class="stat-label">Active Users</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-number">1M+</div>
+                    <p class="stat-label">Prayers Tracked</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-number">100+</div>
+                    <p class="stat-label">Countries</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonials-section">
+        <div class="container">
+            <h2 class="text-center section-title">What Our Users Say</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card testimonial-card h-100">
+                        <div class="card-body">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"PrayerTracker has transformed my daily routine. The reminders are timely and the interface is so easy to use!"</p>
+                            <p class="testimonial-author">- Ahmed S.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card testimonial-card h-100">
+                        <div class="card-body">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"The Qaza management feature has been a game-changer. I can now easily keep track of and make up for missed prayers."</p>
+                            <p class="testimonial-author">- Fatima R.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card testimonial-card h-100">
+                        <div class="card-body">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="testimonial-text">"As a new convert, the educational resources have been invaluable. I'm learning so much about proper prayer practices."</p>
+                            <p class="testimonial-author">- James M.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="cta-section">
+        <div class="container cta-content text-center">
+            <h2 class="cta-title">Ready to Start Your Prayer Journey?</h2>
+            <p class="cta-text">Join thousands of users who have improved their prayer life with PrayerTracker.</p>
+            <a class="btn btn-signup" href="@Url.Action("New", "User")">
+                <i class="fas fa-user-plus me-2"></i> Sign Up Now
+            </a>
+        </div>
+    </div>
+
+    <script src="~/Content/js/jquery-3.7.1.min.js"></script>
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <script>
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 10) {
+                $('.navbar').addClass('navbar-scrolled');
+            } else {
+                $('.navbar').removeClass('navbar-scrolled');
+            }
+        });
+    </script>
+
+</body>
+</html>
