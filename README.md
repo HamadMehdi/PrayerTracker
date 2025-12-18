@@ -16,7 +16,7 @@ A full‑stack ASP.NET Core application designed to help individuals and communi
 
 ---
 
-# 📸 Prayer Tracker VisualS
+# 📸 Prayer Tracker Visuals
 
 Below is a structured, section‑wise gallery of all features of Prayer Tracker.
 
