@@ -1,9 +1,3 @@
-Absolutely, Hamad — I’ll rebuild your **entire README layout** and integrate **all 16 screenshots** directly, cleanly, and in a visually structured way.  
-This version is polished, recruiter‑friendly, and showcases your Prayer Tracker project with maximum clarity.
-
-You can paste this directly into your `README.md`.
-
----
 
 # 🧠 Prayer Tracker – ASP.NET Core Web App for Spiritual Accountability
 
@@ -32,12 +26,12 @@ Below is a structured, section‑wise gallery of all your screenshots.
 <!-- AUTHENTICATION -->
 <h2>🔐 Authentication</h2>
 
-<h3>Sign Up</h3>
+<h3>Landing Page</h3>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/2333990d-f11b-4f38-a11e-b61cd33d3f1d" width="1000">
 </p>
 
-<h3>Login</h3>
+<h3>Sign Up</h3>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/cccae957-71ed-4e45-b0c9-3d9a1a052edc" width="1000">
 </p>
@@ -45,7 +39,7 @@ Below is a structured, section‑wise gallery of all your screenshots.
 <hr/>
 
 <!-- DASHBOARD -->
-<h2>🏠 User Dashboard</h2>
+<h2>🏠 Log In</h2>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/13636278-9a0e-475b-9a97-934945d3199b" width="1000">
@@ -54,19 +48,19 @@ Below is a structured, section‑wise gallery of all your screenshots.
 <hr/>
 
 <!-- PRAYER LOGGING -->
-<h2>🙏 Prayer Logging</h2>
+<h2>🙏 Admin Dashboard</h2>
 
-<h3>Today's Prayers</h3>
+<h3>Managing Users</h3>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/8ad5d096-e8bc-406f-86c7-be105ebdbc2c" width="1000">
 </p>
 
-<h3>Qaza Prayer List</h3>
+<h3>Admin Uploading Content</h3>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/8fc6ccff-ddce-4ecc-a19a-58489bff953d" width="1000">
 </p>
 
-<h3>Add Qaza Prayer</h3>
+<h3>Enable Disable Users</h3>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6b052871-3fa1-40cc-bebe-78f627bf9e08" width="1000">
 </p>
@@ -96,7 +90,7 @@ Below is a structured, section‑wise gallery of all your screenshots.
   <img src="https://github.com/user-attachments/assets/ebe4d24a-9bd5-4306-89db-2edec5ef2fea" width="1000">
 </p>
 
-<h3>Category Report Summary</h3>
+<h3>Qaza Saved Successfully</h3>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/1fc0b729-98bc-4336-9eb2-24b4facfaae7" width="1000">
 </p>
