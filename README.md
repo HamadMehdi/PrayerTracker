@@ -181,8 +181,8 @@ For major changes, please open an issue first to discuss what you’d like to im
 **Muhammad Hamad Mehdi**  
 .NET Developer – Lahore, Pakistan  
 📧 Email: hamadmehdi1214@outlook.com  
-🔗 LinkedIn: https://www.linkedin.com/in/hamadkazmi  
-🐙 GitHub: https://github.com/hamadkazmi
+🔗 LinkedIn: https://www.linkedin.com/in/hamadsyed5  
+🐙 GitHub: https://github.com/hamadMehdi
 
 ---
 
