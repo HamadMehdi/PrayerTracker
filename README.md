@@ -56,6 +56,39 @@
 
 | Dashboard | Prayer Logging | Report Generator |
 |-----------|----------------|------------------|
+[url=https://postimg.cc/67Yrcv6N][img]https://i.postimg.cc/67Yrcv6N/Screenshot-2025-11-02-153240.png[/img][/url]
+
+[url=https://postimg.cc/t123kxRp][img]https://i.postimg.cc/t123kxRp/Screenshot-2025-11-02-153253.png[/img][/url]
+
+[url=https://postimg.cc/SXD6dMS3][img]https://i.postimg.cc/SXD6dMS3/Screenshot-2025-11-02-153321.png[/img][/url]
+
+[url=https://postimg.cc/p9qfCFW6][img]https://i.postimg.cc/p9qfCFW6/Screenshot-2025-11-02-153342.png[/img][/url]
+
+[url=https://postimg.cc/WDXG8kNf][img]https://i.postimg.cc/WDXG8kNf/Screenshot-2025-11-02-153358.png[/img][/url]
+
+[url=https://postimg.cc/679VC0KN][img]https://i.postimg.cc/679VC0KN/Screenshot-2025-11-02-153407.png[/img][/url]
+
+[url=https://postimg.cc/hJS8VrnR][img]https://i.postimg.cc/hJS8VrnR/Screenshot-2025-11-02-153423.png[/img][/url]
+
+[url=https://postimg.cc/xk0GLR2W][img]https://i.postimg.cc/xk0GLR2W/Screenshot-2025-11-02-153437.png[/img][/url]
+
+[url=https://postimg.cc/Y4pNQ3H5][img]https://i.postimg.cc/Y4pNQ3H5/Screenshot-2025-11-02-153458.png[/img][/url]
+
+[url=https://postimg.cc/t1XdF5jc][img]https://i.postimg.cc/t1XdF5jc/Screenshot-2025-11-02-153512.png[/img][/url]
+
+[url=https://postimg.cc/p92QKZH1][img]https://i.postimg.cc/p92QKZH1/Screenshot-2025-11-02-153522.png[/img][/url]
+
+[url=https://postimg.cc/bGz01Thg][img]https://i.postimg.cc/bGz01Thg/Screenshot-2025-11-02-153541.png[/img][/url]
+
+[url=https://postimg.cc/Y4pNQ3H8][img]https://i.postimg.cc/Y4pNQ3H8/Screenshot-2025-11-02-153557.png[/img][/url]
+
+[url=https://postimg.cc/v1Q75zst][img]https://i.postimg.cc/v1Q75zst/Screenshot-2025-11-02-153614.png[/img][/url]
+
+[url=https://postimg.cc/Y4pNQ3Hb][img]https://i.postimg.cc/Y4pNQ3Hb/Screenshot-2025-11-02-153706.png[/img][/url]
+
+[url=https://postimg.cc/bZ0HG5KG][img]https://i.postimg.cc/bZ0HG5KG/Screenshot-2025-11-02-153715.png[/img][/url]
+
+
 | ![Dashboard](https://via.placeholder.com/400x250/6c757d/fff?text=Dashboard+View) | ![Prayer Log](https://via.placeholder.com/400x250/0d6efd/fff?text=Prayer+Logging) | ![Report Gen](https://via.placeholder.com/400x250/198754/fff?text=Report+Generator) |
 
 | Content Management | User Management | Mobile View |
