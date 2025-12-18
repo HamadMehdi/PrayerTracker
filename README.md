@@ -1,53 +1,102 @@
-Absolutely, Hamad! Here's a visually engaging and recruiter-friendly `README.md` for your Prayer Tracker GitHub repository. It blends clarity, structure, and aesthetics to showcase your full-stack ASP.NET Core project with impact.
+Absolutely, Hamad — I’ll rebuild your **entire README layout** and integrate **all 16 screenshots** directly, cleanly, and in a visually structured way.  
+This version is polished, recruiter‑friendly, and showcases your Prayer Tracker project with maximum clarity.
+
+You can paste this directly into your `README.md`.
 
 ---
 
 # 🧠 Prayer Tracker – ASP.NET Core Web App for Spiritual Accountability
 
-![Prayer Tracker Banner](https://ibb.co/Y7LGjB9t)
-
-## 🌟 Overview
-
-**Prayer Tracker** is a full-stack web application built to help individuals and communities **track, manage, and reflect** on their spiritual practices. Designed with a clean UI and robust backend, it empowers users to log prayers, generate insightful reports, and engage with educational content—all while promoting consistency through gamified progress.
+A full‑stack ASP.NET Core application designed to help individuals and communities **track, manage, and reflect** on their daily prayers. Built with clean architecture, role‑based access, and a modern UI, Prayer Tracker blends technology with spiritual purpose.
 
 ---
 
-## 🚀 Live Preview (Localhost Dev Screenshots)
+## 🌟 Features at a Glance
 
-| Sign Up | Login | Dashboard |
-|--------|-------|-----------|
-| ![](https://ibb.co/dwQJHV0T) | ![](https://ibb.co/BHLSY2TG) | ![](https://ibb.co/fzSgztcr) |
-
-| Add Qaza Prayer | Prayer Reports | Category Report |
-|----------------|----------------|-----------------|
-| ![](https://ibb.co/jkbRnyJH) | ![](https://ibb.co/gb8KdRKp) | ![](https://ibb.co/vxbxpZ0r) |
-
-| Content Management | Video Preview | Admin Panel |
-|-------------------|----------------|-------------|
-| ![](https://ibb.co/C3tQnxwx) | ![](https://ibb.co/tT85LCzH) | ![](https://ibb.co/5XLRcbky) |
+- ✅ **Prayer Logging Dashboard** – Track daily prayers, streaks, and consistency  
+- 📊 **Report Generator** – Daily, weekly, monthly, and category‑based reports  
+- 🎓 **Content Management System** – Add and manage prayer guidance (text + video)  
+- 🔐 **User Roles** – Admin, Teacher, and General User  
+- 🕹️ **Gamified XP System** – Encourages consistency and engagement  
+- 📱 **Responsive UI** – Built with Bootstrap + custom styling  
 
 ---
 
-## 💡 Key Features
+# 📸 Screenshots
 
-- ✅ **Prayer Logging Dashboard**  
-  Track daily prayers, monitor streaks, and view tier-based progress.
-
-- 📊 **Report Generator**  
-  Generate reports by date, prayer type, and format (PDF, Excel, CSV, On-Screen).
-
-- 🎓 **Content Management System**  
-  Add, preview, and organize prayer-related content (text, video, guidance).
-
-- 🔐 **User Management**  
-  Role-based access for Admins, Teachers, and General Users.
-
-- 🕹️ **Gamified Progress**  
-  XP-based tier system to encourage consistency and engagement.
+Below is a structured, section‑wise gallery of all your screenshots.
 
 ---
 
-## 🛠️ Tech Stack
+## 🔐 Authentication
+
+### **Sign Up**
+![Sign Up](https://i.postimg.cc/67Yrcv6N/Screenshot-2025-11-02-153240.png)
+
+### **Login**
+![Login](https://i.postimg.cc/t123kxRp/Screenshot-2025-11-02-153253.png)
+
+---
+
+## 🏠 User Dashboard
+
+### **Dashboard Overview**
+![Dashboard](https://i.postimg.cc/SXD6dMS3/Screenshot-2025-11-02-153321.png)
+
+---
+
+## 🙏 Prayer Logging
+
+### **Today's Prayers**
+![Prayer Log](https://i.postimg.cc/p9qfCFW6/Screenshot-2025-11-02-153342.png)
+
+### **Qaza Prayer List**
+![Qaza List](https://i.postimg.cc/WDXG8kNf/Screenshot-2025-11-02-153358.png)
+
+### **Add Qaza Prayer**
+![Add Qaza](https://i.postimg.cc/679VC0KN/Screenshot-2025-11-02-153407.png)
+
+### **Qaza Saved Successfully**
+![Success](https://i.postimg.cc/hJS8VrnR/Screenshot-2025-11-02-153423.png)
+
+---
+
+## 📈 Reports & Analytics
+
+### **Report Generator**
+![Report Generator](https://i.postimg.cc/xk0GLR2W/Screenshot-2025-11-02-153437.png)
+
+### **Custom Range Report**
+![Custom Range](https://i.postimg.cc/Y4pNQ3H5/Screenshot-2025-11-02-153458.png)
+
+### **Report Format Selection**
+![Report Format](https://i.postimg.cc/t1XdF5jc/Screenshot-2025-11-02-153512.png)
+
+### **Category Report Summary**
+![Category Summary](https://i.postimg.cc/p92QKZH1/Screenshot-2025-11-02-153522.png)
+
+### **Category Report Table**
+![Category Table](https://i.postimg.cc/bGz01Thg/Screenshot-2025-11-02-153541.png)
+
+---
+
+## 🎓 Prayer Guidance & Content Management
+
+### **Prayer Guidance Video**
+![Video Guidance](https://i.postimg.cc/Y4pNQ3H8/Screenshot-2025-11-02-153557.png)
+
+### **Content List (Admin)**
+![Content List](https://i.postimg.cc/v1Q75zst/Screenshot-2025-11-02-153614.png)
+
+### **Content Details**
+![Content Details](https://i.postimg.cc/Y4pNQ3Hb/Screenshot-2025-11-02-153706.png)
+
+### **Admin Panel**
+![Admin Panel](https://i.postimg.cc/bZ0HG5KG/Screenshot-2025-11-02-153715.png)
+
+---
+
+# 🛠️ Tech Stack
 
 | Layer | Technologies |
 |-------|--------------|
@@ -55,32 +104,26 @@ Absolutely, Hamad! Here's a visually engaging and recruiter-friendly `README.md`
 | **Backend** | ASP.NET Core MVC, Razor Pages |
 | **Database** | SQL Server, Entity Framework Core |
 | **Security** | ASP.NET Identity, Role-Based Access |
-| **Other** | LINQ, Modular Architecture, Responsive UI |
+| **Other** | LINQ, Clean Architecture, Modular Components |
 
 ---
 
-## 👨‍💻 My Role
+# 👨‍💻 My Role
 
-I designed and developed the entire solution—from **database schema** to **UI/UX**—with a focus on:
+I designed and developed the entire solution:
 
-- Clean architecture & modular components  
-- Real-world usability & accessibility  
-- Gamified engagement & spiritual purpose
+- Database schema  
+- Backend logic & APIs  
+- UI/UX design  
+- Authentication & role management  
+- Reporting engine  
+- Content management module  
 
----
-
-## 📸 More Screenshots
-
-- [Prayer Log View](https://ibb.co/qYrmDNRg)
-- [Qaza Prayer Confirmation](https://ibb.co/Q3gG7Vg1)
-- [Report Generator (Custom Range)](https://ibb.co/RkdQ5mVR)
-- [Category Report Summary](https://ibb.co/M564ykBP)
-- [Admin Content List](https://ibb.co/gLDTTskj)
-- [Video Guidance Preview](https://ibb.co/svZK8z8G)
+This project reflects my passion for building meaningful, real‑world applications with clean architecture and strong usability.
 
 ---
 
-## 📦 Installation
+# 📦 Installation
 
 ```bash
 # Clone the repository
@@ -98,26 +141,36 @@ dotnet run
 
 ---
 
-## 🙌 Contributing
+# 🤝 Contributing
 
-Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
+Contributions are welcome.  
+For major changes, please open an issue first to discuss what you’d like to improve.
 
 ---
 
-## 📬 Contact
+# 📬 Contact
 
 **Muhammad Hamad Mehdi**  
-.NET Developer | Lahore, Pakistan  
-📧 [hamadmehdi1214@outlook.com](mailto:hamadmehdi1214@outlook.com)  
-🔗 [LinkedIn](https://www.linkedin.com/in/hamadkazmi) | [GitHub](https://github.com/hamadkazmi)
+.NET Developer – Lahore, Pakistan  
+📧 Email: hamadmehdi1214@outlook.com  
+🔗 LinkedIn: https://www.linkedin.com/in/hamadkazmi  
+🐙 GitHub: https://github.com/hamadkazmi
 
 ---
 
-## 🔖 Tags
+# 🔖 Tags
 
-`#DotNetDeveloper` `#AspNetCore` `#Blazor` `#EntityFramework` `#SQLServer` `#FullStackDeveloper`  
-`#CSharp` `#PrayerTracker` `#TechForGood` `#JuniorDeveloper` `#PakistanTech` `#GamifiedApps`
+`#DotNetDeveloper` `#AspNetCore` `#Blazor` `#EntityFramework` `#SQLServer`  
+`#FullStackDeveloper` `#CSharp` `#PrayerTracker` `#TechForGood`  
+`#JuniorDeveloper` `#PakistanTech` `#GamifiedApps`
 
 ---
 
-Would you like me to turn this into a GitHub page or help you write a project description for LinkedIn too?
+If you'd like, I can also:
+
+✅ Add a **GIF demo** section  
+✅ Create a **badges row** (build, license, tech stack icons)  
+✅ Add a **project architecture diagram**  
+✅ Improve the banner/header design  
+
+Just tell me the style you want.
